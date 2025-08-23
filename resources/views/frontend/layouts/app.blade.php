@@ -6,7 +6,8 @@
 <body  >
  
 
- here some secrion 
+ 
+@include('user.home.index')
 
 
 @include('user.layouts.footer')
