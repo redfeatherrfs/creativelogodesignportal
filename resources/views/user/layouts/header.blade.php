@@ -1,48 +1,76 @@
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Header :: drop into your Blade layout -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>{{ getOption('app_name') }} - @stack('title' ?? '')</title>
-    @hasSection('meta')
-        @stack('meta')
-    @else
-        @php
-            $metaData = getMeta('home');
-        @endphp
-
-            <!-- Open Graph meta tags for social sharing -->
-        <meta property="og:type" content="{{ __('Zaiscrip') }}">
-        <meta property="og:title" content="{{ $metaData['meta_title'] ?? getOption('app_name') }}">
-        <meta property="og:description" content="{{ $metaData['meta_description'] ?? getOption('app_name') }}">
-        <meta property="og:image" content="{{ $metaData['og_image'] ?? getSettingImage('app_logo') }}">
-        <meta property="og:url" content="{{ url()->current() }}">
-        <meta property="og:site_name" content="{{getOption('app_name') }}">
-
-        <!-- Twitter Card meta tags for Twitter sharing -->
-        <meta name="twitter:card" content="{{ __('Zaiscrip') }}">
-        <meta name="twitter:title" content="{{ $metaData['meta_title'] ?? getOption('app_name') }}">
-        <meta name="twitter:description" content="{{ $metaData['meta_description'] ?? getOption('app_name') }}">
-        <meta name="twitter:image" content="{{ $metaData['og_image'] ?? getSettingImage('app_logo') }}">
-
-        <meta name="csrf-token" content="{{ csrf_token() }}" />
-    @endif
-
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="{{ getSettingImage('app_fav_icon') }}" type="image/png" sizes="16x16">
-    <link rel="shortcut icon" href="{{ getSettingImage('app_fav_icon') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ getSettingImage('app_fav_icon') }}">
-
-    <!-- css file  -->
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/dataTables.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/dataTables.responsive.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/summernote/summernote-lite.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/plugins.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/scss/style.css')}}?v=2.1" />
-    <link rel="stylesheet" href="{{asset('common/css/common.css')}}" />
-    @include('admin.setting.partials.dynamic-color')
+<link rel="stylesheet" href="{{asset('assets/scss/creative.css')}}" />
+<script src="{{asset('assets/js/creative.js')}}"></script>
 
 
-    @stack('style')
-</head>
+<header class="site-header">
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span><i class="fa-solid fa-headphones-simple"></i> 1-555-372</span>
+        <span class="sep"></span>
+        <span><i class="fa-regular fa-clock"></i> Mon - Sat: 8:00 - 17:00</span>
+        <span class="sep"></span>
+        <a href="mailto:xyz@gmail.com" class="email"><i class="fa-regular fa-envelope"></i> XYZ@Gmail.com</a>
+      </div>
+      <div class="tb-right">
+        <nav class="social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </nav>
+        <div class="lang">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
+            En <img src="https://flagcdn.com/w20/gb.png" alt="English" width="18" height="12"> <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul class="lang-menu" role="menu" aria-label="Language">
+            <li role="menuitem"><a href="#"><img src="https://flagcdn.com/w20/gb.png" alt=""> English</a></li>
+            <li role="menuitem"><a href="#"><img src="https://flagcdn.com/w20/pk.png" alt=""> Urdu</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <div class="mainnav">
+    <div class="container">
+      <a class="logo" href="/">
+        <!-- Replace with your <img> if needed -->
+        <span class="logo-mark">C</span>
+        <span class="logo-text">
+          <strong>reative</strong>
+          <small>Logo Design</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav" role="navigation">
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Elements</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </nav>
+
+      <div class="utilities">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+    
+</header>
