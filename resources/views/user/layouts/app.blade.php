@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
 @include('user.layouts.header')
 
 <body class="{{ selectedLanguage()->rtl == 1 ? 'direction-rtl' : 'direction-ltr' }}  {{ !(getOption('app_color_design_type', DEFAULT_COLOR) == DEFAULT_COLOR) ? 'custom-color' : '' }}">

@@ -1,5 +1,4 @@
-
- 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
   --bg:#0b0b0b;
   --bg-2:#111;
@@ -9,32 +8,26 @@
   --highlight:#2a2a2a; /* active tab background */
   --sep:#262626;
   --container:1200px;
-    --container: 1200px;   /* same as header/footer */
+  --container: 1200px;   /* same as header/footer */
   --gutter: 18px;        /* side padding */
 }
-
- 
-
-.wrapper{
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: var(--container);
-  margin-inline: auto;          /* center */
-  padding-inline: var(--gutter);
-  border: 1px solid red;        /* debug — remove later */
+/* basit */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#000}
-
-.container{
-  max-width:var(--container);
-  margin-inline:auto;
-  padding:0 18px;
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
+h1 { font-size: 50px; line-height: 100%; font-weight: 800;}
+h2 { font-size: 49px; line-height: 100%; font-weight: 700;}
+h3 { font-size: 42px; line-height: 100%; font-weight: 800;}
+h4 { font-size: 34px; line-height: 100%; font-weight: 800;}
+h5 { font-size: 28px; line-height: 100%; font-weight: 800;}
+h6 { font-size: 24px; line-height: 100%; font-weight: 800;}
+p {
+    font-size: 16.12px;
 }
-
+/* basit */
 /* Topbar */
 .topbar{background:var(--bg);border-bottom:1px solid var(--sep);font-size:14px}
 .topbar .tb-left, .topbar .tb-right{display:flex;align-items:center;gap:12px}
@@ -62,10 +55,7 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sa
 .logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text)}
 .logo-mark{
   width:40px;height:40px;display:grid;place-items:center;border-radius:50%;
-  background:linear-gradient(145deg,#c792c4,#b261ad);font-weight:800<style>
-
-</style>
-
+  background:linear-gradient(145deg,#c792c4,#b261ad);font-weight:800
 }
 .logo-text strong{font-weight:700}
 .logo-text small{display:block;color:var(--muted);font-size:11px;margin-top:-2px}
@@ -109,21 +99,6 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sa
   .logo-text small{display:none}
   .topbar .tb-left .email{display:none}
 }
- 
-
-
-
-/* ====== Footer Styles ====== */
-:root{
-  --f-bg:#1e1e1f;          /* dark grey panel, like screenshot */
-  --f-grad:#2a2a2b;        /* soft gradient overlay */
-  --f-text:#efefef;
-  --f-muted:#c7c7c7;
-  --f-sep:#3a3a3b;
-  --container:1200px;
-  --accent:#c792c4;        /* matches logo accent */
-}
-
 .site-footer{color:var(--f-text); background:linear-gradient(180deg,var(--f-bg),var(--f-grad));}
 .site-footer .container{max-width:var(--container);margin-inline:auto;padding:0 18px}
 .footer-wrap{padding:48px 0 24px;border-top:1px solid #0f0f0f}
@@ -221,20 +196,6 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sa
   .footer-offices{
     grid-template-columns: 1fr;
   }
-}
-
-
-
-/* ===== Base / Theme (match your site) ===== */
-:root{
-  --container: 1200px;
-  --hero-bg:#0b0b0c;
-  --text:#ffffff;
-  --muted:#c9c9c9;
-  --accent:#d13aa7;           /* pink stroke for arcs */
-  --purple1:#6a34d2;          /* card gradient */
-  --purple2:#2a0e52;
-  --card-shadow: 0 12px 40px rgba(0,0,0,.6);
 }
 
 .hero{position:relative;background:var(--hero-bg);color:var(--text);overflow:hidden}

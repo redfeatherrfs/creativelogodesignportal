@@ -1,7 +1,6 @@
-
- 
- 
-  <div class="wrapper">
+<div class="wrapper container">
     @include('user.home.hero')
-  </div>
+
+    @include('user.home.what-u-get')
+</div>
  
