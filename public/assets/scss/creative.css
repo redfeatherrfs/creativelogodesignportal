@@ -3,6 +3,7 @@
 :root{
   --text-dark:#000;
   --primary-color:#CC067F;
+  --primary-bg:#0D031C;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -11,8 +12,8 @@ body {
 }
 
 h1 { font-size: 50px; line-height: 100%; font-weight: 800;}
-h2 { font-size: 49px; line-height: 100%; font-weight: 700;}
-h3 { font-size: 42px; line-height: 100%; font-weight: 800;}
+h2 { font-size: 55px; line-height: 100%; font-weight: 700;}
+h3 { font-size: 38px; line-height: 100%; font-weight: 800;}
 h4 { font-size: 34px; line-height: 100%; font-weight: 800;}
 h5 { font-size: 28px; line-height: 100%; font-weight: 800;}
 h6 { font-size: 24px; line-height: 100%; font-weight: 800;}
@@ -20,6 +21,16 @@ p {
     font-size: 14px;
     line-height: 100%;
 }
+.sec-bg-primary {background-color: var(--primary-bg);}
+.plr-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.border-bottom {
+  color: whitesmoke;
+  opacity: 1;
+}
+
 /* old */
 /* Topbar */
 .topbar{background:var(--bg);border-bottom:1px solid var(--sep);font-size:14px}
