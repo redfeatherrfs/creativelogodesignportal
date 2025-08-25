@@ -4,6 +4,7 @@
 
 
     @include('user.home.what-u-get')
+    @include('user.home.testimonial')
 
     @include('user.home.accordion')
 
