@@ -1,7 +1,6 @@
 <!-- Recent Work Section with Slider -->
 <section class="sec-bg-primary howitwork"   style="background-image: url('{{ asset('assets/images/home_assets/howitwork.svg') }}'); ">
 <div class="container">
-
   <!-- Recent Work -->
     <div class="row">
     <!-- left -->
@@ -57,68 +56,116 @@
       </div>
       <div class="col-12"><hr class="border-bottom m-0"></div>
      </div> 
-
     </div>
   </div>
 </div>
-<!-- end container -->
-<div class="container-fluid">
-  <div id="recentWorkCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Slides -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row justify-content-center">
-          <div class="col-10 col-md-3">
-            <div class="text-center">
-              <img src="{{asset('assets/images/home_assets/portfolio/img1.png')}}" class="img-fluid rounded" alt="Project 1">
-              <p class="mt-2 fw-bold text-white">VitaCare<br>Healthtech</p>
-            </div>
-          </div>
-          <div class="col-10 col-md-3 d-none d-md-block">
-            <div class="text-center">
-              <img src="{{asset('assets/images/home_assets/portfolio/img2.png')}}" class="img-fluid rounded" alt="Project 2">
-              <p class="mt-2 fw-bold text-white">VitaCare<br>Healthtech</p>
-            </div>
-          </div>
-          <div class="col-10 col-md-3 d-none d-md-block">
-            <div class="text-center">
-              <img src="{{asset('assets/images/home_assets/portfolio/img3.png')}}" class="img-fluid rounded" alt="Project 3">
-              <p class="mt-2 fw-bold text-white">VitaCare<br>Healthtech</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="row justify-content-center">
-          <div class="col-10 col-md-3">
-            <div class="text-center">
-              <img src="{{asset('assets/images/home_assets/portfolio/img4.png')}}" class="img-fluid rounded" alt="Project 4">
-              <p class="mt-2 fw-bold text-white">VitaCare<br>Healthtech</p>
-            </div>
-          </div>
-          <div class="col-10 col-md-3 d-none d-md-block">
-            <div class="text-center">
-              <img src="{{asset('assets/images/home_assets/portfolio/img5.png')}}" class="img-fluid rounded" alt="Project 2">
-              <p class="mt-2 fw-bold text-white">VitaCare<br>Healthtech</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#recentWorkCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#recentWorkCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <!-- recent work! -->
+  <div class="container-fluid plr-0">
+  <div class="hdr">
+  <div class="title text-white">
+    <h2>Our Recent Work</h2>
   </div>
 
+  <!-- external arrow controls -->
+  <div class="nav-arrows" aria-hidden="false">
+    <button id="prevBtn" type="button" aria-label="Previous">
+     <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="31.4892" cy="31.4892" r="30.8448" stroke="white" stroke-width="1.28891"/>
+      <path d="M36.9512 20.5671L26.0286 31.4897L36.9512 42.4123" stroke="white" stroke-width="2.57781" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button id="nextBtn" type="button" aria-label="Next">
+      <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <circle cx="31.4892" cy="31.4892" r="30.8448" stroke="white" stroke-width="1.28891"/>
+       <path d="M26.0283 20.5671L36.9509 31.4897L26.0283 42.4123" stroke="white" stroke-width="2.57781" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
 </div>
+
+<!-- SLIDER -->
+<div class="recent-work">
+  <!-- Slide 1 -->
+  <article class="work-card">
+    <div class="cover">
+      <img src="{{asset('assets/images/home_assets/portfolio/img1.png')}}" class="icon-point-size imge-responsive" alt="portfolio 1">
+    </div>
+    <div class="card-body">
+      <h3 class="project-title text-white">
+        <span>VitaCare</span>
+        <span>Healthtech</span>
+      </h3>
+    </div>
+  </article>
+
+  <!-- Slide 2 -->
+  <article class="work-card">
+    <div class="cover">
+        <img src="{{asset('assets/images/home_assets/portfolio/img2.png')}}" class="icon-point-size imge-responsive" alt="portfolio 2">
+    </div>
+    <div class="card-body">
+      <h3 class="project-title text-white">
+        <span>VitaCare</span>
+        <span>Healthtech</span>
+      </h3>
+    </div>
+  </article>
+
+  <!-- Slide 3 -->
+  <article class="work-card">
+    <div class="cover">
+      <img src="{{asset('assets/images/home_assets/portfolio/img3.png')}}" class="icon-point-size imge-responsive" alt="portfolio 3">
+    </div>
+    <div class="card-body">
+      <h3 class="project-title text-white">
+        <span>VitaCare</span>
+        <span>Healthtech</span>
+      </h3>
+    </div>
+  </article>
+
+  <!-- Slide 4 -->
+  <article class="work-card">
+    <div class="cover">
+      <img src="{{asset('assets/images/home_assets/portfolio/img4.png')}}" class="icon-point-size imge-responsive" alt="portfolio 4">
+    </div>
+    <div class="card-body">
+      <h3 class="project-title text-white">
+        <span>VitaCare</span>
+        <span>Healthtech</span>
+      </h3>
+    </div>
+  </article>
+
+  <!-- Slide 5 -->
+  <article class="work-card">
+    <div class="cover">
+     <img src="{{asset('assets/images/home_assets/portfolio/img5.png')}}" class="icon-point-size imge-responsive" alt="portfolio 5">
+    </div>
+    <div class="card-body">
+      <h3 class="project-title text-white">
+        <span>VitaCare</span>
+        <span>Healthtech</span>
+      </h3>
+    </div>
+  </article>
+
+  <!-- Slide 6 -->
+  <article class="work-card">
+    <div class="cover">
+      <img src="{{asset('assets/images/home_assets/portfolio/img1.png')}}" class="icon-point-size imge-responsive" alt="portfolio 1">
+    </div>
+    <div class="card-body">
+      <h3 class="project-title text-white">
+        <span>VitaCare</span>
+        <span>Healthtech</span>
+      </h3>
+    </div>
+  </article>
+ </div>
 </section>
+
+
+
 
 

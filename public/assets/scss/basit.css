@@ -130,6 +130,109 @@
    padding-left: 70px;
 }
 
+/* recent work */
+
+    .hdr{
+      display:flex;
+      align-items:center;
+      justify-content:space-around;
+      margin-bottom:24px;
+      gap:12px;
+    }
+    /* Arrow group anchored to the right (visually like screenshot) */
+    .nav-arrows{
+      display:flex;
+      gap:10px;
+    }
+    .nav-arrows button{
+      width:62px; height:62px;
+      border-radius:999px;
+      border:none;
+      background:transparent;
+      display:grid; place-items:center;
+      cursor:pointer;
+      color:#fff;
+      transition:transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .nav-arrows button svg {
+        width: 62px;
+        height: 62px;
+    }
+    .nav-arrows button:hover{transform:translateY(-1px); }
+    .nav-arrows button:active{ transform:translateY(0); }
+    .nav-arrows svg{ width:20px; height:20px; }
+
+    /* Slick overrides: spacing between slides */
+    .recent-work{
+      margin-top:10px;
+    }
+    .recent-work .slick-list{ margin:0 calc(var(--gap) * -0.5); }
+    .recent-work .slick-slide{ padding:0 calc(var(--gap) * 0.5); }
+
+    /* Card */
+    .work-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,0) 22%) border-box,
+                 var(--card-bg) padding-box;
+      border:none;
+      border-radius:var(--radius);
+      overflow:hidden;
+      position:relative;
+      box-shadow: 0 20px 40px rgba(0,0,0,.35);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .work-card:hover{
+      transform: translateY(-4px);
+    }
+
+    /* Image (keeps consistent height like the mockup) */
+    .cover{
+        position: relative;
+        aspect-ratio: 18 / 20;
+        background: #0b0b14;
+        overflow: hidden;
+        margin: 20px;
+        border-radius: 15.34px;
+    }
+    /* fallback for older browsers – maintains ~16:11 ratio */
+    .cover::before{
+      content:"";
+      display:block;
+      padding-top:68.75%;
+    }
+    .cover img{
+      position:absolute; inset:0;
+      width:100%; height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-body{
+      padding:16px 16px 22px;
+    }
+    .project-title{
+      margin:0;
+      font-weight:800;
+      font-size: 38px;
+      line-height:1.15;
+      letter-spacing:.2px;
+    }
+    .project-title span{ display:block; }
+
+    /* Slick dots styled subtly (hidden by default on desktop) */
+    .recent-work .slick-dots{
+      bottom:-32px;
+    }
+    .recent-work .slick-dots li button:before{
+      color:#fff; opacity:.35;
+    }
+    .recent-work .slick-dots li.slick-active button:before{
+      opacity:.95;
+    }
+
+
+    /* about us  */
+
+    
 
 @media (max-width: 900px) {
     .section-what-you-get  {

@@ -1,0 +1,34 @@
+<svg width="681" height="716" viewBox="0 0 681 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M87.5862 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M141.442 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M195.297 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M249.153 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M303.009 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M356.865 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M410.721 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M464.577 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M518.433 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M572.289 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M626.144 41.9874V688.257" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 95.8431H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 149.699H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 203.555H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 257.411H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 311.266H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 365.122H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 418.978H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 472.834H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 526.69H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 580.546H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 634.401H680" stroke="#EAEAEA" stroke-width="1.11462"/>
+<path d="M33.73 41.9874V688.257" stroke="#B3B3B3" stroke-width="1.11462" stroke-dasharray="2.23 2.23"/>
+<path d="M680 41.9874V688.257" stroke="#B3B3B3" stroke-width="1.11462" stroke-dasharray="2.23 2.23"/>
+<path d="M33.73 41.9874H680" stroke="#B3B3B3" stroke-width="1.11462" stroke-dasharray="2.23 2.23"/>
+<path d="M33.73 688.257H680" stroke="#B3B3B3" stroke-width="1.11462" stroke-dasharray="2.23 2.23"/>
+<circle cx="588.481" cy="79.4318" r="47.5496" stroke="#290391" stroke-width="10.7077"/>
+<circle cx="588.481" cy="79.4318" r="22.6729" fill="#FD5269"/>
+<path d="M588.481 0.184387C632.248 0.184492 667.728 35.6646 667.728 79.4315C667.728 123.198 632.248 158.678 588.481 158.679C572.711 158.678 558.017 154.072 545.671 146.132C541.357 143.357 534.757 145.46 530.639 148.518V148.518C526.927 151.275 523.542 156.14 523.72 160.76C523.735 161.145 523.743 161.531 523.743 161.919C523.742 178.257 510.498 191.502 494.16 191.502C477.821 191.502 464.577 178.257 464.577 161.919C464.577 145.58 477.821 132.336 494.16 132.336C494.4 132.336 494.639 132.339 494.877 132.344C500.065 132.468 505.651 128.816 509.106 124.945V124.945C512.938 120.652 516.745 113.64 514.649 108.281C511.153 99.3409 509.234 89.6104 509.234 79.4315C509.234 35.6646 544.714 0.184499 588.481 0.184387ZM588.481 8.94513C549.552 8.94524 517.995 40.503 517.995 79.4315C517.995 118.36 549.552 149.918 588.481 149.918C627.409 149.918 658.967 118.36 658.967 79.4315C658.967 40.503 627.409 8.94523 588.481 8.94513Z" fill="#CC067F"/>
+<circle cx="99.879" cy="633.338" r="19.7468" transform="rotate(-14.3193 99.879 633.338)" fill="#CC067F"/>
+<circle cx="99.879" cy="682.684" r="11.3634" transform="rotate(-14.3193 99.879 682.684)" fill="#FD5269"/>
+<circle cx="44.1123" cy="674.484" r="33.8303" transform="rotate(-14.3193 44.1123 674.484)" fill="#662E91"/>
+</svg>
