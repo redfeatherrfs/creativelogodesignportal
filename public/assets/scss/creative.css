@@ -161,6 +161,42 @@ p {
 }
 
 
+/* accordion sectoin */
+.challenge-accordion{
+  background: radial-gradient(120% 120% at 0% 0%, #cc0a6f 0%, #7a0046 45%, #3a003a 100%);
+}
+.py-6{ padding-top:4rem; padding-bottom:4rem; }
+
+.faq-accordion .accordion-item{
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+ 
+}
+.faq-accordion .accordion-button{
+  background: transparent;
+  color: #fff;
+  padding:  0rem  ;
+  font-weight: 700;
+  letter-spacing: .01em;
+  box-shadow: none;
+  font-size: 20px;
+}
+.faq-accordion .accordion-button::after{
+  filter: invert(1) brightness(2);
+  transition: transform .2s ease;  
+}
+.faq-accordion .accordion-button:not(.collapsed)::after{
+  transform: rotate(180deg);
+}
+.faq-accordion .accordion-body{
+  color: rgba(255,255,255,.9);
+  padding: 0 0 1.15rem 0;
+  
+}
+
+
+
+
 /* request form */
 
 
@@ -215,6 +251,9 @@ p {
 .proposal-form .btn:hover{
   transform: translateY(-1px);
 }
+
+.left-padding{ padding-left: 6% !important;}
+.right-padding{ padding-right: 6% !important;}
 
 /* Spacing tweak for large screens so form sits visually centered */
 @media (min-width: 1200px){

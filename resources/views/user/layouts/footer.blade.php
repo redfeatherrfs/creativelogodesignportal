@@ -1,6 +1,5 @@
 <footer class="site-footer text-white pt-5 pb-4">
-  <div class="container">
-    <div class="row">
+ <div class="container-fluid plr-0 ">    <div class="row">
       
 <div class="col-lg-9 mb-5 mb-lg-0">
     <div class="mb-4">

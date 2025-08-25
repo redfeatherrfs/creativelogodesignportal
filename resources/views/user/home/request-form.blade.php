@@ -1,7 +1,7 @@
 <section class="proposal-hero d-flex align-items-center">
-  <div class="container-fluid">
+  <div class="container-fluid plr-0 ">
     <div class="row">
-      <div class="col-xl-8 col-lg-9">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto">
 
         <p class="eyebrow text-white-50 mb-2">RULE THE WEB!</p>
         <h1 class="hero-title text-white mb-5">
