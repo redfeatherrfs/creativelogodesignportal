@@ -159,6 +159,102 @@ p {
 .footer-offices address{
   font-style:normal;color:var(--f-muted);line-height:1.45
 }
+
+/* ---------- Methodology (fixed) ---------- */
+
+/* Section background & spacing */
+.methodology-2{
+  background: radial-gradient(120% 120% at 100% 0%, #fff 0%, #ffe6f1 65%, #ffd6e9 100%);
+  padding: 64px 0;
+}
+
+/* BOX (single definition – no duplicate/override) */
+.tool-bg{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;                /* fixed proportion box */
+  background: url("../../assets/images/home_assets/Design%20%26%20Iteration.jpg")
+              center / cover no-repeat;  /* default center image */
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+/* Center the ring inside the box */
+.ring-wrap{
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+}
+
+/* RING – rotates smoothly; pause class via JS */
+.ring{
+  position: relative;
+  width: 520px; height: 520px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  animation: ring-rotate 8s linear infinite;
+  will-change: transform;
+}
+.ring.paused{ animation-play-state: paused; }
+
+@keyframes ring-rotate { to { transform: rotate(360deg); } }
+
+/* CENTER IMAGE – stays visually still (counter-rotate) */
+.ring-center{
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 320px; height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  z-index: 2;
+  border-radius: 50%;               /* 👈 makes it circular */
+  object-fit: cover;                /* 👈 image crop fix */
+  /* counter the parent rotation so it doesn't spin */
+  animation: ring-counter 8s linear infinite;
+  will-change: transform;
+}
+.ring.paused .ring-center{ animation-play-state: paused; }
+
+@keyframes ring-counter{
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+/* ICONS AROUND THE CIRCLE */
+.ring-icon {
+  --count: 8;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform:
+    rotate(calc(360deg / var(--count) * var(--i)))   /* icon ko angle par set karo */
+    translate(255px)                                 /* radius */
+    rotate(calc(-360deg / var(--count) * var(--i))); /* 👈 negative angle = seedha icon */
+ width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #222;
+  padding: 0px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  z-index: 1;
+}
+
+
+/* Responsive */
+@media (max-width: 991.98px){
+  .ring{ width: 340px; height: 340px; }
+  .ring-center{ width: 180px; height: 180px; }
+  .ring-icon{
+    transform:
+      rotate(calc(360deg / var(--count) * var(--i)))
+      translate(150px)
+      rotate(calc(-360deg / var(--count) * var(--i)));
+  }
+}
+
+
+
 /* testimonial */
 .left-padding-testimonial{ padding-left: 20% !important; }
 .right-padding-testimonial{ padding-right: 11% !important;  margin-top: 180px;}

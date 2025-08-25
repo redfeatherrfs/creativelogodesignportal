@@ -1,0 +1,16 @@
+sudo php artisan key:generate
+
+php artisan migrate
+php artisan db:seed
+php artisan serve
+php artisan test
+
+php artisan route:list
+php artisan route:list --method=GET
+
+
+
+
+COMPOSER_MEMORY_LIMIT=-1 composer require illuminate/support
+sudo apt-get install php8.1-mbstring 
+

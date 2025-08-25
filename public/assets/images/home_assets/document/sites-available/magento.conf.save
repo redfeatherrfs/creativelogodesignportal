@@ -1,0 +1,13 @@
+<VirtualHost magento.loc:80>
+		ServerName magento.loc
+		DocumentRoot /home/adnan/www/magento
+
+		<Directory /home/adnan/www/magento>
+			AllowOverride All
+			Require all granted
+		</Directory>
+
+		ErrorLog /home/adnan/www/error.log
+		CustomLog /home/adnan/www/access.log combined
+
+</VirtualHost>

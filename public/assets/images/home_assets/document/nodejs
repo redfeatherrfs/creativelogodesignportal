@@ -1,0 +1,12 @@
+
+Search server and close
+===============================
+sudo lsof -i :30000
+kill -9 {PID}
+
+
+
+sudo lsof -i :30000
+sudo lsof -i :30000
+
+kill -9 2712

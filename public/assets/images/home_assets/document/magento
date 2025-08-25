@@ -1,0 +1,16 @@
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento
+
+
+e398877616bebcdd42243ab89852c8cd
+99b8659ba18248be9cc652632af49d12
+
+
+
+bin/magento setup:install --base-url=http://magento.loc/ \
+--db-host=localhost --db-name=magento --db-user=root --db-password=root \
+--admin-firstname=Magento --admin-lastname=User --admin-email=adnankhan125@gmail.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=localhost \
+--elasticsearch-port=9200
+
