@@ -1,6 +1,6 @@
-<section class="section" id="what-u-get">
-  <!-- Left -->
-  <div class="section-left">
+<section class="section-what-you-get">
+  <!-- what-you-get-section-left  -->
+  <div class="what-you-get-section-left ">
     <div class="title">
      <h2 class=" ">What You Get</h2>
      <p class=" subtitle">All Things Design, We Got You Covered.</p>
@@ -21,7 +21,7 @@
   </div>
 
   <!-- Right -->
-  <div class="section-right">
+  <div class="what-you-get-section-right">
     <div class="service active" data-index="0">
       <h3 class="">UI/UX Design <span class="arrow"><svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.10449 1.70947L15.4049 15.0098L28.7052 1.70947" stroke="black" stroke-width="3.17868" stroke-linecap="round"/></svg></span></h3>
       <p  class="">From Conceptualization To Execution.</p>

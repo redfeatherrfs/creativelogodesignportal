@@ -1,17 +1,9 @@
+/* basit */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-  --bg:#0b0b0b;
-  --bg-2:#111;
-  --text:#e7e7e7;
-  --muted:#a0a0a0;
-  --accent:#2dd4bf; /* subtle teal for icons/hover */
-  --highlight:#2a2a2a; /* active tab background */
-  --sep:#262626;
-  --container:1200px;
-  --container: 1200px;   /* same as header/footer */
-  --gutter: 18px;        /* side padding */
+  --text-dark:#000;
+  --primary-color:#CC067F;
 }
-/* basit */
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -25,9 +17,10 @@ h4 { font-size: 34px; line-height: 100%; font-weight: 800;}
 h5 { font-size: 28px; line-height: 100%; font-weight: 800;}
 h6 { font-size: 24px; line-height: 100%; font-weight: 800;}
 p {
-    font-size: 16.12px;
+    font-size: 14px;
+    line-height: 100%;
 }
-/* basit */
+/* old */
 /* Topbar */
 .topbar{background:var(--bg);border-bottom:1px solid var(--sep);font-size:14px}
 .topbar .tb-left, .topbar .tb-right{display:flex;align-items:center;gap:12px}
