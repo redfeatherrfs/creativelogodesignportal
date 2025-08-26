@@ -4,6 +4,9 @@
     @include('user.home.howitwork')
     @include('user.home.what-u-get')
 
+    @include('user.home.toolbox')
+    @include('user.home.logos')
+    
     @include('user.home.methalogy')
     @include('user.home.testimonial')
     @include('user.home.accordion')
