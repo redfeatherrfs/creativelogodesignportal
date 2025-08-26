@@ -83,18 +83,9 @@
 </section>
 <style>
  /* ===== Hero styles ===== */
-:root{
-  --hero-bg: #0B0B0B;
-  --hero-text: #fff;
-  --hero-sub: #C7C7C7;
-  --hero-accent: #9D5CFF;          /* purple */
-  --hero-grad-1: #2A1247;
-  --hero-grad-2: #140A25;
-}
-
 .hero{
   background: var(--hero-bg);
-  color: var(--hero-text);
+  color: #fff;
   padding:0;
   position: relative; overflow: visible;  /* crops decorative rings */
 }

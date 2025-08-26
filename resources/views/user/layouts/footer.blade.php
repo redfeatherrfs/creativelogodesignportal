@@ -1,10 +1,8 @@
 <footer class="site-footer text-white pt-5 pb-4">
- <div class="container-fluid plr-0 ">    <div class="row left-padding-footer" >
+ <div class="container-fluid">    <div class="row left-padding-footer" >
       
-<div class="col-lg-9 mb-5 mb-lg-0 ">
-    <div class="mb-4">
+    <div class="col-lg-9 mb-5 mb-lg-0 ">
           <img src="{{asset('assets/images/logo/logo.png')}}"  alt="Creative Logo Design" class="footer-logo mb-2">
-         </div>
         </div>
       <!-- Left section -->
       <div class="col-lg-9 mb-5 mb-lg-0">
