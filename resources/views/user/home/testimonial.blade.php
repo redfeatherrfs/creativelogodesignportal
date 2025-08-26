@@ -4,12 +4,12 @@
   <div class="container-fluid">
     <div class="row left-padding-testimonial ">
       <!-- Left graphic -->
-      <div class="col-lg-5 text-center text-lg-start">
+      <div class="col-lg-4 text-center text-lg-start">
         <img src="{{asset('assets/images/Group 171.png')}}" alt="Brand Mark" class="cs-hero-graphic">
       </div>
 
       <!-- Right slider -->
-      <div class="col-lg-7 right-padding-testimonial">
+      <div class="col-lg-8 right-padding-testimonial">
         <h2 class="display-5 fw-bold mb-4 cs-title">WHAT OUR VALUED CLIENTS ARE SAYING ABOUT US</h2>
 
         <div id="testiCarousel" class="carousel slide" data-bs-ride="false">

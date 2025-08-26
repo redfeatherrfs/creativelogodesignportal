@@ -160,33 +160,142 @@ p {
   font-style:normal;color:var(--f-muted);line-height:1.45
 }
 
-/* ---------- Methodology (fixed) ---------- */
-
-/* Section background & spacing */
-.methodology-2{
-  background: radial-gradient(120% 120% at 100% 0%, #fff 0%, #ffe6f1 65%, #ffd6e9 100%);
-  padding: 64px 0;
+  /* ---------- Methodology (fixed) ---------- */
+/* heading row center + width */
+ .methodology-head {
+  width: 66%;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;         /* vertical center align */
+  justify-content: space-between;
+  gap: 32px;                   /* text aur button ke beech */
 }
 
-/* BOX (single definition – no duplicate/override) */
+ 
+
+/* columns ke side paddings kum ya zero */
+/* .left-padding-meth{  padding-left: 2% !important; }
+.right-padding-meth{ padding-right: 0% !important; } */
+
+/* desktop par accordion ko aur left lao */
+@media (min-width: 992px){
+  .acc-steps{ 
+    margin-left: -24px;  /* -16 to -40 tak adjust kar sakte ho */
+  }
+}
+
+ 
+
+
+
+
+
+/* mobile stack spacing */
+@media (max-width: 991.98px){
+  .acc-steps{ margin-top: 14px; }
+}
+  /* Section background & spacing */
+  /* ---------------- Methodology Layout & Gradient ---------------- */
+.methodology-2{
+  position: relative;
+  padding: 64px 0;
+  /* Figma-like sweep: LB white -> RT soft pink */
+  background:
+    radial-gradient(60% 60% at 0% 100%, rgba(255,230,241,.65) 0%, rgba(255,230,241,0) 60%),
+    linear-gradient(45deg, #ffffff 0%, #ffffff 40%, #ffe6f1 72%, #fbd2df 100%);
+}
+
+/* Heading */
+.meth-title{
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: .01em;
+  font-size: clamp(2rem, 3.6vw + .25rem, 3.6rem);
+}
+.meth-title .accent{ color:#e6178f; }
+
+/* Eyebrow + green star (Figma chip) */
+.eyebrow{
+  position: relative;
+  padding-left: 22px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color:#111;
+}
+.eyebrow::before{
+  content:"";
+  position:absolute; left:0; top:50%;
+  width:10px; height:10px;
+  background:#d7ff3f;          /* neon green */
+  transform: translateY(-50%) rotate(45deg);
+  border-radius: 2px;           /* soft corners */
+  box-shadow: 0 0 8px rgba(215,255,63,.8);
+}
+
+
+ /* CTA button – default white, black text; hover = gradient */
+.btn-cta{
+  padding: .95rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid #111;
+  background: #fff;          /* default white */
+  color: #111;               /* default black text */
+  font-weight: 700;
+  font-size: 1.05rem;        /* text bada */
+  line-height: 1;
+  width: 200px;
+  transition: background-position .35s ease, color .2s ease, border-color .2s ease, background-color .2s ease;
+  background-image: none;    /* gradient sirf hover per */
+}
+.btn-cta:hover{
+  color: #fff;
+  border-color: transparent;
+  background-image: linear-gradient(60deg,#5a3dff,#e9168c,#ff7a59,#ffce00);
+  background-size: 240% 240%;
+  background-position: right center;
+}
+
+
+
+/* tighten columns then add controlled gap on desktop */
+.left-padding-meth{ padding-left: 6% !important; }
+.right-padding-meth{ padding-right: 16% !important; }
+
+@media (min-width: 992px){
+  .acc-steps{ margin-left: 36px; }  /* gap exactly jaisa Figma */
+}
+
+@media (max-width: 991.98px){
+  .acc-steps{ margin-top: 16px; }   /* stack spacing on mobile */
+}
+
+ 
+
+/* BOX */
 .tool-bg{
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;                /* fixed proportion box */
-  background: url("../../assets/images/home_assets/Design%20%26%20Iteration.jpg")
-              center / cover no-repeat;  /* default center image */
-  border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  aspect-ratio: 16 / 10;
   overflow: hidden;
 }
-
-/* Center the ring inside the box */
 .ring-wrap{
-  position: absolute; inset: 0;
-  display: grid; place-items: center;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;   /* right align */
+  align-items: center;         /* vertical center */
+  padding-right: 60px;         /* 👈 isse thoda left aa jayega */
 }
 
-/* RING – rotates smoothly; pause class via JS */
+/* Responsive: center align */
+@media (max-width: 991.98px){
+  .ring-wrap{
+    justify-content: center;   /* 👈 center kar do */
+    padding-right: 0;          /* 👈 offset hatado */
+  }
+}
+/* RING */
 .ring{
   position: relative;
   width: 520px; height: 520px;
@@ -196,67 +305,130 @@ p {
   will-change: transform;
 }
 .ring.paused{ animation-play-state: paused; }
+@keyframes ring-rotate{ to{ transform: rotate(360deg);} }
 
-@keyframes ring-rotate { to { transform: rotate(360deg); } }
-
-/* CENTER IMAGE – stays visually still (counter-rotate) */
+/* Center img */
 .ring-center{
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 320px; height: 320px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.12);
-  z-index: 2;
-  border-radius: 50%;               /* 👈 makes it circular */
-  object-fit: cover;                /* 👈 image crop fix */
-  /* counter the parent rotation so it doesn't spin */
+  position:absolute; top:50%; left:50%;
+  width:320px; height:320px; border-radius:50%;
+  object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,.12);
   animation: ring-counter 8s linear infinite;
-  will-change: transform;
 }
 .ring.paused .ring-center{ animation-play-state: paused; }
-
 @keyframes ring-counter{
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+  from{ transform: translate(-50%,-50%) rotate(0deg); }
+  to{   transform: translate(-50%,-50%) rotate(-360deg); }
 }
 
-/* ICONS AROUND THE CIRCLE */
-.ring-icon {
+/* Icons around the circle */
+.ring-icon{
   --count: 8;
-  position: absolute;
-  top: 45%;
-  left: 45%;
+  position:absolute; top:45%; left:45%;
   transform:
-    rotate(calc(360deg / var(--count) * var(--i)))   /* icon ko angle par set karo */
-    translate(255px)                                 /* radius */
-    rotate(calc(-360deg / var(--count) * var(--i))); /* 👈 negative angle = seedha icon */
- width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #222;
-  padding: 0px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.15);
-  z-index: 1;
+    rotate(calc(360deg/var(--count)*var(--i)))
+    translate(255px)
+    rotate(calc(-360deg/var(--count)*var(--i)));
+  width:50px; height:50px; border-radius:50%;
+  background:#222; box-shadow:0 4px 16px rgba(0,0,0,.15); z-index:1;
+}
+
+/* Responsive ring */
+@media (max-width: 991.98px){
+  .ring{ width:340px; height:340px; }
+  .ring-center{ width:180px; height:180px; }
+  .ring-icon{
+    transform:
+      rotate(calc(360deg/var(--count)*var(--i)))
+      translate(150px)
+      rotate(calc(-360deg/var(--count)*var(--i)));
+  }
+  .acc-steps{ margin-left: 0; margin-top: 16px; } /* mobile gap */
+}
+
+/* ---------------- Accordion (custom arrow chip) ---------------- */
+
+
+/* accordion wrapper: no card look */
+.acc-steps{
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* har item = transparent, sirf bottom line */
+.acc-steps .accordion-item{
+  background: transparent;
+  border: 0;                       /* table-box off */
+  border-bottom: 3px solid rgba(0,0,0,.12);
+  border-radius: 0;
+}
+
+/* button row spacing */
+.acc-steps .accordion-button{
+  padding: 1.8rem 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 
-/* Responsive */
+
+/* Bootstrap default arrow off already hai */
+.acc-steps .accordion-button::after{ display:none !important; }
+
+/* body: no extra box, just text + spacing */
+.acc-steps .accordion-body{
+  padding: .95rem 0 1rem 0;
+  background: transparent;
+  border: 0;
+  color:#3a3a3a;
+}
+
+.acc-steps .acc-title{ flex:1 1 auto; }
+
+.acc-steps .acc-arrow{
+  flex:0 0 auto;
+  width: 40px; height: 40px; border-radius: 999px;
+  background:#e6178f;
+  display:inline-grid; place-items:center;
+  color:#fff; font-weight:900; position:relative;
+}
+.acc-steps .acc-arrow::before{ content:"\2192"; font-size:18px; }
+.acc-steps .accordion-button:not(.collapsed) .acc-arrow::before{ content:"\00d7"; }
+.acc-steps .accordion-body{ color:#3a3a3a; padding:0 0 1.05rem 0; }
+
+
+@media (min-width: 1200px){
+  .ring{ width: 520px; height: 520px; }
+  .ring-center{ width: 320px; height: 320px; }
+}
 @media (max-width: 991.98px){
   .ring{ width: 340px; height: 340px; }
   .ring-center{ width: 180px; height: 180px; }
-  .ring-icon{
-    transform:
-      rotate(calc(360deg / var(--count) * var(--i)))
-      translate(150px)
-      rotate(calc(-360deg / var(--count) * var(--i)));
-  }
+}
+
+.acc-steps .acc-arrow::before{
+  content:"\2192"; /* → */
+  font-size: 20px;
+  line-height: 1;
+  transform: translateX(1px); /* slight optical adjust */
+}
+/* Expanded state -> show × close */
+.acc-steps .accordion-button:not(.collapsed) .acc-arrow::before{
+  content:"\00d7"; /* × */
+  transform: none;
+}
+
+/* Body text */
+.acc-steps .accordion-body{
+  color:#3a3a3a;
+  padding: 0 0 1.1rem 0;
 }
 
 
 
 /* testimonial */
-.left-padding-testimonial{ padding-left: 20% !important; }
+.left-padding-testimonial{ padding-left: 10% !important; }
 .right-padding-testimonial{ padding-right: 11% !important;  margin-top: 180px;}
 
 /* ===== Testimonials UI Fixes ===== */
@@ -353,6 +525,9 @@ p {
   justify-content: flex-end;   /* left ki jagah right */
 }
 
+.carousel-indicators {
+  margin-right: 0%;  
+}
 .cs-dots [data-bs-target]{
   width:10px; height:10px; border-radius:50%;
   background:#bdbdbd; opacity:.8; border:none; margin:0 5px;
@@ -380,9 +555,10 @@ p {
 
 
 /* accordion sectoin */
-.challenge-accordion{
-  background: radial-gradient(120% 120% at 0% 0%, #cc0a6f 0%, #7a0046 45%, #3a003a 100%);
+.challenge-accordion {
+  background: linear-gradient(90deg, #cc0a6f 0%, #7a0046 45%, #3a003a 100%);
 }
+
 .py-6{ padding-top:4rem; padding-bottom:4rem; }
 
 .faq-accordion .accordion-item{
@@ -390,22 +566,34 @@ p {
   border-bottom: 1px solid rgba(255,255,255,.25);
  
 }
+/* 1) Button spacing thoda do taa-ke arrow ko jagah mile */
 .faq-accordion .accordion-button{
   background: transparent;
   color: #fff;
-  padding:  0rem  ;
+  padding: .35rem 2.25rem .35rem 0;  /* right space for arrow */
   font-weight: 700;
   letter-spacing: .01em;
   box-shadow: none;
-  font-size: 20px;
+  font-size: 25px;
+  --arrow-size: 1.6rem;              /* arrow ka size yahan control */
 }
-.faq-accordion .accordion-button::after{
+
+/* 2) Arrow ko fixed size do (scale nahi), always visible */
+.faq-accordion .accordion-button::after {
   filter: invert(1) brightness(2);
-  transition: transform .2s ease;  
+  transition: transform .2s ease;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  background-size: 100% 100%;        /* svg ko container ke mutabiq fit karo */
+  flex-shrink: 0;                     /* chhoti width par squeeze na ho */
+  transform: none;                    /* no scale */
 }
-.faq-accordion .accordion-button:not(.collapsed)::after{
+
+/* 3) Open state – sirf rotate */
+.faq-accordion .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
 }
+
 .faq-accordion .accordion-body{
   color: rgba(255,255,255,.9);
   padding: 0 0 1.15rem 0;
@@ -413,23 +601,35 @@ p {
 }
 
 
-
+@media (max-width: 575.98px){
+  .faq-accordion .accordion-button{
+    --arrow-size: 1.4rem;   /* thoda chhota */
+    font-size: 20px;
+  }
+}
 
 /* request form */
 
 
 /* Section background + overlay */
-.proposal-hero{
+.proposal-hero {
   position: relative;
   min-height: 86vh;
   padding: 80px 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.proposal-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: url("../../assets/images/home_assets/brick-wall-with-parking-meter-it.jpg") center center / cover no-repeat fixed;
+  z-index: -1; /* 👈 form ke neeche chala jayega */
 }
-.proposal-hero::before{
-  content:"";
-  position:absolute; inset:0;
-  background: rgba(0,0,0,.55); /* dark overlay */
-}
+
+ 
 .proposal-hero > .container{ position: relative; z-index: 1; }
 
 /* Heading styles */
@@ -449,6 +649,7 @@ p {
   border-radius: 0;                 /* straight edges like ref */
   color:#fff;
   padding: .9rem 1rem;
+  
 }
 .proposal-form .form-control:focus{
   box-shadow: none;
@@ -470,8 +671,8 @@ p {
   transform: translateY(-1px);
 }
 
-.left-padding{ padding-left: 6% !important;}
-.right-padding{ padding-right: 6% !important;}
+.left-padding{ padding-left: 7% !important;}
+.right-padding{ padding-right: 0% !important;}
 
 /* Spacing tweak for large screens so form sits visually centered */
 @media (min-width: 1200px){
@@ -485,6 +686,10 @@ p {
 
 
 /* Footer Styling */
+
+.left-padding-footer{ padding-left: 7% !important; }
+.right-padding-footer{ padding-right: 7% !important;   }
+
 .site-footer {
   background: linear-gradient(180deg,#343a40 0%, #2d2f32 50%, #222326 100%);
   color: #fff;
@@ -496,7 +701,8 @@ p {
 }
 .footer-logo {
   width: 100%;
-  max-width: 320px;
+  max-width: 476px;
+  margin-bottom: 80px !important;
   height: auto;
   display: block;
 }
