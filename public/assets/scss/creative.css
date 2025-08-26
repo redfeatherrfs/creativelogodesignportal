@@ -604,6 +604,13 @@ p {
 .left-padding-testimonial{ padding-left: 10% !important; }
 .right-padding-testimonial{ padding-right: 11% !important;  margin-top: 180px;}
 
+@media (min-width: 767px){
+.left-padding-testimonial{ padding-left: 0% !important; }
+.right-padding-meth {
+    padding-right: 1% !important;
+}
+} 
+
 /* ===== Testimonials UI Fixes ===== */
 
 /* layout safeguards */
@@ -785,21 +792,30 @@ p {
 
 
 /* Section background + overlay */
-.proposal-hero {
+.proposal-hero{
   position: relative;
   min-height: 86vh;
   padding: 80px 0;
-  z-index: 1;
-  overflow: hidden;
+  z-index: 1; /* form / content ke liye */
 }
 
+/* background image layer */
 .proposal-hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url("../../assets/images/home_assets/brick-wall-with-parking-meter-it.jpg") center center / cover no-repeat fixed;
-  z-index: -1; /* 👈 form ke neeche chala jayega */
+  inset: 0;
+  background: url("../../assets/images/home_assets/brick-wall-with-parking-meter-it.jpg") 
+              center center / cover no-repeat fixed;
+  z-index: -2; /* sabse neeche */
+}
+
+/* overlay layer */
+.proposal-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);  /* 👈 overlay (black 45% opacity) */
+  z-index: -1; /* image ke upar, lekin form ke neeche */
 }
 
  
@@ -849,14 +865,19 @@ p {
 
 /* Spacing tweak for large screens so form sits visually centered */
 @media (min-width: 1200px){
-  .proposal-hero{ padding-top: 100px; padding-bottom: 120px; }
+  .proposal-hero{ padding-top: 100px; padding-bottom: 120px; max-height: 300px; }
+  
+
 }
 
 /* Make inputs full width on small screens (Bootstrap already stacks) */
 @media (max-width: 575.98px){
   .proposal-hero{ min-height: 92vh; }
+  
 }
-
+@media (min-width: 767px){
+ .left-padding{ padding-left: 1% !important;}
+} 
 
 /* Footer Styling */
 
@@ -925,9 +946,28 @@ p {
     font-size: 12px;
 }
 
+@media (max-width: 1024px) {
+
+.mob-wa {
+    display: flex;
+}
+
+.mob-wa .col {
+    width: auto !important;
+}
+}
 /* mobile me center */
 @media (max-width: 991.98px) {
   .footer-bottom .legal-links {
-    text-align: center;
+    text-align: center; 
+    margin-top: 1
+    
+   
+  }
+
+
+  .footer-bottom-mob{
+    margin-top: 50px;
+
   }
 }

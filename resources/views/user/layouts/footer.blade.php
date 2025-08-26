@@ -72,7 +72,7 @@
       
       <!-- Right section (Addresses) -->
       <div class="col-lg-3 right-padding-footer">
-        <div class="row row-cols-1 row-cols-sm-2 gy-4">
+        <div class="row row-cols-1 row-cols-sm-2 gy-4 mob-wa ">
           <div class="col"><div class="fw-bold text-uppercase">NYC</div><div class="small opacity-75">112 West 34th Street<br>18th Floor<br>New York, NY 10120</div></div>
           <div class="col"><div class="fw-bold text-uppercase">Long Island</div><div class="small opacity-75">991 Main St.<br>Suite 200<br>Holbrook, NY 11741</div></div>
           <div class="col"><div class="fw-bold text-uppercase">Washington D.C.</div><div class="small opacity-75">1101 Connecticut Avenue NW<br>Suite 450<br>Washington, DC 20036</div></div>
@@ -87,17 +87,17 @@
       </div>
       
        <!-- copyright bottom -->
-        <div class="footer-bottom"  >
+        <div class="footer-bottom  footer-bottom-mob"  >
           <div class="row g-3  ">
             <!-- Left -->
-            <div class="col-md-8 copyright  ">
+            <div class="col-md-8 copyright ">
               All Rights Reserved © Creative Studio Worldwide is a Web Design Company since 1998.
             </div>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <div class="row g-3  ">
+        <div class="footer-bottom ">
+          <div class="row g-3 ">
             <div class="col-md-8 copyright   ">
               <a href="#" >Privacy Policy</a>
               <a href="#">Terms of Use</a>
