@@ -384,7 +384,7 @@ p {
   color:#3a3a3a;
 }
 
-.acc-steps .acc-title{ flex:1 1 auto; }
+.acc-steps .acc-title{ flex:1 1 auto;  font-size: 20px; font-weight: bolder;}
 
 .acc-steps .acc-arrow{
   flex:0 0 auto;
@@ -393,7 +393,7 @@ p {
   display:inline-grid; place-items:center;
   color:#fff; font-weight:900; position:relative;
 }
-.acc-steps .acc-arrow::before{ content:"\2192"; font-size:18px; }
+ 
 .acc-steps .accordion-button:not(.collapsed) .acc-arrow::before{ content:"\00d7"; }
 .acc-steps .accordion-body{ color:#3a3a3a; padding:0 0 1.05rem 0; }
 
@@ -407,16 +407,17 @@ p {
   .ring-center{ width: 180px; height: 180px; }
 }
 
+/* default (closed state) = TOP wala arrow (↗) */
 .acc-steps .acc-arrow::before{
-  content:"\2192"; /* → */
+  content:"\2197";   /* ↗ north east arrow */
   font-size: 20px;
   line-height: 1;
-  transform: translateX(1px); /* slight optical adjust */
 }
-/* Expanded state -> show × close */
+
+/* open (expanded state) = RIGHT arrow (→) */
 .acc-steps .accordion-button:not(.collapsed) .acc-arrow::before{
-  content:"\00d7"; /* × */
-  transform: none;
+  content:"\2192";   /* → right arrow */
+  font-size: 20px;
 }
 
 /* Body text */
