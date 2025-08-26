@@ -1,5 +1,5 @@
 <footer class="site-footer text-white pt-5 pb-4">
- <div class="container-fluid plr-0 ">    <div class="row">
+ <div class="container-fluid plr-0 ">    <div class="row left-padding-footer" >
       
 <div class="col-lg-9 mb-5 mb-lg-0 ">
     <div class="mb-4">
@@ -62,7 +62,7 @@
         </div>
         
         <!-- Social -->
-        <div class="d-flex align-items-center gap-3 mt-4">
+        <div class="d-flex align-items-center gap-3 mt-4 ">
           <span class="fw-semibold">Follow Us</span>
           <a class="social-btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
           <a class="social-btn" href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -73,7 +73,7 @@
       </div>
       
       <!-- Right section (Addresses) -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 right-padding-footer">
         <div class="row row-cols-1 row-cols-sm-2 gy-4">
           <div class="col"><div class="fw-bold text-uppercase">NYC</div><div class="small opacity-75">112 West 34th Street<br>18th Floor<br>New York, NY 10120</div></div>
           <div class="col"><div class="fw-bold text-uppercase">Long Island</div><div class="small opacity-75">991 Main St.<br>Suite 200<br>Holbrook, NY 11741</div></div>

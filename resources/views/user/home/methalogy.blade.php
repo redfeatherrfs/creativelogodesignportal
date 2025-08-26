@@ -1,6 +1,16 @@
 <section class="methodology-2">
+
+<div class="methodology-head">
+  <div class="head-text">
+    <div class="eyebrow mb-2">Creative Toolkit</div>
+    <h2 class="meth-title">Our methodology for <span class="accent">success</span></h2>
+  </div>
+
+  <a href="#contact" class="btn btn-pill btn-cta">Get Started</a>
+</div>
+
   <div class="container-fluid">
-    <div class="row align-items-center g-4">
+<div class="row align-items-center g-0">
 
       <!-- LEFT: rotating ring + background -->
       <!-- LEFT: box + ring INSIDE the box -->
@@ -27,7 +37,7 @@
 
 
       <!-- RIGHT: accordion -->
-      <div class="col-lg-6">
+      <div class="col-lg-6 right-padding-meth">
        <div class="accordion acc-steps" id="steps4">
 
   <div class="accordion-item" data-bg="1">

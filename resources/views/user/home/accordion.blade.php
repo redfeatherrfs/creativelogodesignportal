@@ -6,11 +6,12 @@
   
  <div class="row align-items-center g-5 left-padding">
       <!-- Left panel -->
-      <div class="col-lg-5">
+ 
+      <div class="col-lg-4">
         <h2 class="display-5 fw-bold text-white mb-4 lh-tight">
-          We solve your web design, development & digital marketing challenges
+            LOUNGE LIZARD SOLVES YOUR WEB DESIGN, DEVELOPMENT AND DIGITAL MARKETING CHALLENGES
         </h2>
-        <p class="text-white-50 mb-4">Tap a question on the right to see the answer.</p>
+         
         <a href="#contact" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">Get Started</a>
       </div>
 
@@ -22,7 +23,7 @@
             <h2 class="accordion-header" id="q1">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
-                Would a website redesign bring more traffic?
+               Would a website redesign bring more traffic? Would a website   
               </button>
             </h2>
             <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#faqAccordion">
@@ -34,7 +35,7 @@
             <h2 class="accordion-header" id="q2">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
-                My website isn’t generating enough leads.
+                 My website isn’t generating enough leads.  My website isn’t generating enough 
               </button>
             </h2>
             <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
@@ -46,7 +47,7 @@
             <h2 class="accordion-header" id="q3">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
-                My ecommerce website is losing sales.
+                My ecommerce website is losing sales.  My ecommerce website is losing sales.
               </button>
             </h2>
             <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqAccordion">
@@ -58,7 +59,7 @@
             <h2 class="accordion-header" id="q4">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
-                I want better ROI on digital marketing.
+                I want better ROI on digital marketing.   I want better ROI on digital marketing.
               </button>
             </h2>
             <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqAccordion">
@@ -70,7 +71,7 @@
             <h2 class="accordion-header" id="q5">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
-                Managing campaigns takes too much time.
+                Managing campaigns takes too much time. Managing campaigns takes   time.
               </button>
             </h2>
             <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faqAccordion">
@@ -82,7 +83,7 @@
             <h2 class="accordion-header" id="q6">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="a6">
-                How often should a website be updated?
+                How often should a website be updated?  How often should a website?
               </button>
             </h2>
             <div id="a6" class="accordion-collapse collapse" aria-labelledby="q6" data-bs-parent="#faqAccordion">
@@ -94,7 +95,7 @@
             <h2 class="accordion-header" id="q7">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="a7">
-                Why is responsive web design important?
+                 Why is responsive web design important?   responsive web design important?
               </button>
             </h2>
             <div id="a7" class="accordion-collapse collapse" aria-labelledby="q7" data-bs-parent="#faqAccordion">
@@ -106,7 +107,7 @@
             <h2 class="accordion-header" id="q8">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="a8">
-                What makes an effective website design?
+                What makes an effective website design? effective website design?
               </button>
             </h2>
             <div id="a8" class="accordion-collapse collapse" aria-labelledby="q8" data-bs-parent="#faqAccordion">
@@ -118,7 +119,7 @@
             <h2 class="accordion-header" id="q9">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="a9">
-                How can I rank higher in search?
+                How can I rank higher in search?  How can I rank higher in search?
               </button>
             </h2>
             <div id="a9" class="accordion-collapse collapse" aria-labelledby="q9" data-bs-parent="#faqAccordion">
@@ -130,7 +131,7 @@
             <h2 class="accordion-header" id="q10">
               <button class="accordion-button collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="a10">
-                Which digital marketing channels work best?
+                Which digital marketing channels work best?  Which digital marketing channels 
               </button>
             </h2>
             <div id="a10" class="accordion-collapse collapse" aria-labelledby="q10" data-bs-parent="#faqAccordion">
