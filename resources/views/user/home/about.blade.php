@@ -94,11 +94,9 @@
 </section>
 
 <style>
-.about-hero{ background:#fff; padding-top: 200px !important;
+.about-hero{ background:#fff; 
+    padding-top: 180px !important;
     padding-bottom: 100px !important;
-    position: relative;
-    z-index: 10;
-    overflow: visible;
 }
 .about-hero h1 {
     font-weight:700;

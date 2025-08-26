@@ -90,4 +90,43 @@ $(function () {
         }
       });
 
+      //  $(".back-cover").click(function(){
+      //   let slidecover = $(this);
+      //   console.log(slidecover.attr); 
+      //   //  $("").animate({left: '250px'});
+      //  });
+
+      
+      // $(".back-thp").click(function(){
+      //   let slide = $(this);
+      //   console.log(slide.attr); 
+      //   //  $("").animate({left: '250px'});
+      //  });
+
+      $(".dot").on("click", function() {
+        let bgImage = $(this).data('slide-image'); // get background from dot
+
+        if(bgImage){  
+          // 1. Update .back-cover background
+          $(".back-cover").css({
+            "background-image": "url(" + bgImage + ")",
+            "background-size": "cover",
+            "background-position": "center"
+          });
+
+          // 2. Animate .back-thp (slide in from right)
+          $(".back-thp")
+            .css({
+              "position": "relative"
+              // "right": "100%"   // start hidden on right
+            })
+            .animate({ right: "65%" }, 1000); // animate into place
+        }
+
+        // 3. Update active dot
+        $(".dot").removeClass("active");
+        $(this).addClass("active");
+      });
+
+     
 });

@@ -1,12 +1,11 @@
 <section class="section-what-you-get" style=" background-image: url('{{asset('assets/images/bg-shadow.png')}}');">
  <div class="container">
-  <div class="row"> 
-   <div class="d-flex gap-110 ">
+   <div class="monitor-inner gap-110 ">
   <!-- what-you-get-section-left  -->
-  <div class="col what-you-get-section-left ">
+  <div class="what-you-get-section-left ">
     <div class="title">
      <h2>What You Get</h2>
-     <p class=" subtitle">All Things Design, We Got You Covered.</p>
+     <p class="subtitle">All Things Design, We Got You Covered.</p>
     </div>
     <div class="monitor">
       <!-- Monitor frame -->
@@ -74,8 +73,6 @@
 
   </div> 
   <!-- dflex -->
- </div> 
- <!-- row -->
 </div> 
 <!-- container -->
 </section>
