@@ -3,5 +3,8 @@
     @include('user.home.about')
     @include('user.home.howitwork')
     @include('user.home.what-u-get')
+
+
+
 </div>
  

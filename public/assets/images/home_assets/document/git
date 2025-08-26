@@ -1,0 +1,20 @@
+git config --global credential.helper store
+git reset --keep HEAD@{1}
+
+
+
+
+gitignore
+
+git rm --cached storage/logs/laravel.log
+
+ 
+git config --list
+
+git config --global user.email
+git config --global user.username 
+
+
+ignore permission on git
+==============
+git config core.fileMode false

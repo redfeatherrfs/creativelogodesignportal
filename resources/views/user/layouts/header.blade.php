@@ -1,68 +1,76 @@
-<header class="site-header">
-  <!-- Top bar -->
-  <div class="topbar">
+ <!-- Top Bar -->
+  <div class="top-bar">
     <div class="container">
-      <div class="tb-left">
-        <span><i class="fa-solid fa-headphones-simple"></i> 1-555-372</span>
-        <span class="sep"></span>
-        <span><i class="fa-regular fa-clock"></i> Mon - Sat: 8:00 - 17:00</span>
-        <span class="sep"></span>
-        <a href="mailto:xyz@gmail.com" class="email"><i class="fa-regular fa-envelope"></i> XYZ@Gmail.com</a>
-      </div>
-      <div class="tb-right">
-        <nav class="social">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </nav>
-        <div class="lang">
-          <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
-            En <img src="https://flagcdn.com/w20/gb.png" alt="English" width="18" height="12"> <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <ul class="lang-menu" role="menu" aria-label="Language">
-            <li role="menuitem"><a href="#"><img src="https://flagcdn.com/w20/gb.png" alt=""> English</a></li>
-            <li role="menuitem"><a href="#"><img src="https://flagcdn.com/w20/pk.png" alt=""> Urdu</a></li>
-          </ul>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex left-icons">
+          <span class="me-3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.5739 11.008C19.5735 11.0693 19.5617 11.1276 19.5449 11.1837C19.5625 11.2778 19.5747 11.3746 19.5747 11.4741V15.5453C19.5747 16.192 19.1905 16.7469 18.641 17.0064C18.5838 17.0674 18.5137 17.1185 18.4314 17.1524L12.1521 19.6177L11.0591 19.6219C11.0537 19.6219 11.0492 19.6234 11.0442 19.6234H9.21494C8.87805 19.6234 8.60519 19.3505 8.60519 19.0137V18.4039C8.60519 18.0674 8.87805 17.7942 9.21494 17.7942H11.0442C11.3807 17.7942 11.654 18.0674 11.654 18.4039V18.5034L15.5686 16.9664C15.0598 16.6935 14.7092 16.1619 14.7092 15.5453V11.4741C14.7092 10.5808 15.436 9.85401 16.3292 9.85401H17.9542C18.0804 9.85401 18.202 9.87192 18.3201 9.89936C18.2988 9.43747 18.2728 8.97711 18.2523 8.79571C17.7675 4.45578 14.2454 1.30488 9.87653 1.30488C5.32624 1.30488 1.63037 4.82164 1.3796 9.48625C1.37732 9.53351 1.36893 9.68938 1.35979 9.88717C1.46573 9.86583 1.57511 9.85401 1.68753 9.85401H3.33196C4.22487 9.85401 4.952 10.5808 4.952 11.4741V15.564C4.952 16.4573 4.22525 17.1836 3.33196 17.1836H1.68753C0.79424 17.1836 0.0678711 16.4573 0.0678711 15.564V11.4737C0.0678711 11.3536 0.0831149 11.237 0.108267 11.1242L0.109792 10.8513C0.11284 10.3609 0.155523 9.53656 0.161621 9.4207C0.447824 4.09908 4.6677 0.085371 9.87653 0.085371C14.8769 0.085371 18.9096 3.69169 19.4645 8.66004C19.5125 9.09296 19.5758 10.6067 19.5739 11.008ZM1.68753 11.0735C1.46649 11.0735 1.28738 11.253 1.287 11.4741V15.564C1.287 15.785 1.46649 15.9645 1.68753 15.9645H3.33158C3.55223 15.9645 3.73211 15.785 3.73211 15.564V11.4741C3.73211 11.253 3.55261 11.0735 3.33158 11.0735H1.68753ZM15.9283 11.4741V15.5453C15.9283 15.7663 16.1078 15.9455 16.3289 15.9455H17.9539C18.1745 15.9455 18.3544 15.7663 18.3544 15.5453V11.4741C18.3544 11.253 18.1749 11.0735 17.9539 11.0735H16.3289C16.1078 11.0735 15.9283 11.253 15.9283 11.4741Z" fill="#18CFAB"/>
+          </svg> 1-555-372</span>
+          <div class="thr"></div>
+          <span class="me-3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.90011 0.0985889C15.2884 0.0985889 19.6562 4.46671 19.6562 9.85465C19.6562 15.243 15.2884 19.6107 9.90011 19.6107C4.51217 19.6107 0.144043 15.243 0.144043 9.85465C0.144043 4.46671 4.51217 0.0985889 9.90011 0.0985889ZM9.90011 18.4103C14.607 18.4103 18.4367 14.5616 18.4367 9.85465C18.4367 5.14773 14.607 1.3181 9.90011 1.3181C5.19319 1.3181 1.36355 5.14773 1.36355 9.85465C1.36355 14.5616 5.19319 18.4103 9.90011 18.4103ZM10.5099 9.60694L13.3875 12.485C13.6257 12.7228 13.6257 13.1092 13.3875 13.3474C13.1493 13.5852 12.7637 13.5852 12.5255 13.3474L9.50758 10.3291C9.49653 10.3177 9.48814 10.3051 9.47823 10.2929C9.36276 10.1824 9.29035 10.0273 9.29035 9.85465V3.75711C9.29035 3.4206 9.5636 3.14736 9.90011 3.14736C10.2366 3.14736 10.5099 3.4206 10.5099 3.75711V9.60694Z" fill="#18CFAB"/>
+          </svg> Mon - Sat: 8:00 - 17:00</span>
+          <div class="thr"></div>
+          <span class="me-3">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.9442 1.51937C19.9477 1.57044 19.9545 1.61769 19.9545 1.67181V11.4279C19.9545 12.4382 19.4404 13.562 18.4301 13.562H2.57652C1.56662 13.562 0.442383 12.4382 0.442383 11.4279V1.67181C0.442383 1.61998 0.447337 1.57044 0.452672 1.52089C0.425233 1.34902 0.468297 1.16647 0.59101 1.02471C0.619974 0.991551 0.651605 0.962969 0.68476 0.937817C1.06929 0.41419 1.85091 0.147423 2.57652 0.147423H18.4301C19.2552 0.147423 19.7434 0.495745 19.897 1.17105C19.9477 1.28156 19.9629 1.40237 19.9442 1.51937ZM2.57652 1.36693C2.40808 1.36693 2.17828 1.35931 1.99192 1.39361L10.1984 7.93436L18.4385 1.36693H18.4301H2.57652ZM18.4301 12.3425C18.7666 12.3425 18.735 11.7644 18.735 11.4279V2.69238L10.5982 9.20227C10.4831 9.30136 10.341 9.3509 10.1984 9.3509C10.0559 9.3509 9.91377 9.30136 9.79906 9.20227L1.66189 2.69238V11.4279C1.66189 11.7644 2.24039 12.3425 2.57652 12.3425H18.4301Z" fill="#18CFAB"/>
+          </svg> XYZ2@gmail.com</span>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <div class="thr"></div>
+          <div class="social-icons">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="thr"></div>
+          <div class="lang-switch d-flex align-items-center">
+            <span class="text-white me-2 fw-light">En</span>
+            <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="lang-flag">
+            <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.18147 0.212325C8.40429 -0.0104928 8.76673 -0.0104928 8.98954 0.212325C9.21236 0.435142 9.21236 0.797221 8.98954 1.02004L5.28377 4.72581C5.17165 4.83793 5.02561 4.89256 4.87813 4.89256C4.73173 4.89363 4.58461 4.83793 4.47249 4.72581L0.766722 1.02004C0.543905 0.797221 0.543905 0.435142 0.766722 0.212325C0.98954 -0.0104928 1.35198 -0.0104928 1.57479 0.212325L4.87813 3.51567L8.18147 0.212325Z" fill="white"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Main nav -->
-  <div class="mainnav">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="logo" href="/">
-        <!-- Replace with your <img> if needed -->
-        <span class="logo-mark">C</span>
-        <span class="logo-text">
-          <strong>reative</strong>
-          <small>Logo Design</small>
-        </span>
+      <a class="navbar-brand logo" href="#">
+        <img src="{{asset('assets/images/logo/logo.png')}}" alt="Creative Logo">
       </a>
-
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
-      <nav class="nav" role="navigation">
-        <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
         </ul>
-      </nav>
-
-      <div class="utilities">
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
-  </div>
-
-    
-</header>
+  </nav>

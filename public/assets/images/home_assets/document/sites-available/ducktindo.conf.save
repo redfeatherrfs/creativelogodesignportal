@@ -1,0 +1,13 @@
+<VirtualHost ducktindo.loc:80>
+		ServerName ducktindo.loc
+		DocumentRoot /home/adnan/www/ducktindo/public
+
+		<Directory /home/adnan/www/ducktindo/publi
+			AllowOverride All
+			Require all granted
+		</Directory>
+
+		ErrorLog /home/adnan/www/error.log
+		CustomLog /home/adnan/www/access.log combined
+
+</VirtualHost>

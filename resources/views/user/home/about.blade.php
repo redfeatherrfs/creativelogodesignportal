@@ -80,7 +80,7 @@
           </div>
 
           <!-- top-right ring decoration -->
-          <div class="ring deco-ring d-none d-md-block ">
+          <div class="deco-ring d-none d-md-block ">
              <img
               src="{{asset('assets/images/home_assets/about-icon-top.svg')}}"
               alt="Team working 2"
@@ -94,7 +94,12 @@
 </section>
 
 <style>
-.about-hero{ background:#fff; }
+.about-hero{ background:#fff; padding-top: 200px !important;
+    padding-bottom: 100px !important;
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+}
 .about-hero h1 {
     font-weight:700;
 }

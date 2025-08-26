@@ -1,0 +1,29 @@
+mongorestore --host 127.0.0.1:27017 -d optimus "/home/adnan/Downloads/optimus"
+mongorestore --host 127.0.0.1:27017 -d shopwin "/home/adnan/Downloads/shopwin"
+/usr/bin/
+
+
+sudo systemctl status mongod
+sudo systemctl enable mongod
+
+sudo systemctl stop mongod
+
+mongosh
+
+
+monogd
+
+ 
+mongodb-compass
+
+
+
+monog cloude atlas
+=======================
+username: adnankhan125
+pass: pFsyxUDNF5odsEoS
+
+
+    const uri = "mongodb+srv://adnankhan125:pFsyxUDNF5odsEoS@cluster0.k3sizeg.mongodb.net/airbnb"
+     const uri   = "mongodb+srv://adnankhan125:pFsyxUDNF5odsEoS@cluster0.k3sizeg.mongodb.net/sample_airbnb"
+

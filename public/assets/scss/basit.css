@@ -229,10 +229,195 @@
       opacity:.95;
     }
 
+    /* complete header */
+       .top-bar {
+      background: #000;
+      color: #fff;
+      font-size: 16.98px;
+      font-weight:700;
+      padding: 6px 0;
+      border-bottom: 1.61px solid #64686B;
+    }
+    .top-bar svg {
+      width: 19.506792068481445px;
+      height: 19.538042068481445px;
+      color: #1abc9c;
+      margin-right: 5px;
+    }
 
-    /* about us  */
+    .top-bar .left-icons{
+          padding-left: 50px;
+    }  
+    .top-bar .thr{
+      width: 1.3058898448944092px;
+      height: 27.423686981201172px;
+      background-color:#FFFFFF33;
+    } 
+    .top-bar .social-icons {
+     width: 210px;
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+     align-items: center;
+    }
+    .lang-switch svg {
+      width: 12px;
+      height: 12px;
+      position: relative;
+      left: 10px;
+    }
+    .top-bar .me-3 {
+      margin-left:1rem !important;
+    }
+    .navbar {
+    background-color: #000000;
+    padding: 0px;
+    }
+    .navbar-nav {
+      gap:11px;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      padding: 12px 20px;
+      background-color: transparent;
+      width: 108px;
+      height: 65px;
+      text-align: center;
+      line-height: 2.6;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .navbar-nav .nav-link.active, 
+    .navbar-nav .nav-link:hover {
+      background-color: #333;
+    }
 
-    
+    .logo img {
+      height: 55px;
+    }
+
+    .lang-flag {
+      width: 20px;
+      height: 15px;
+      object-fit: cover;
+    }
+
+  
+/* Fix top-bar wrapping between 992px and down */
+@media (max-width: 1200px) {
+  .top-bar { font-size: 14px; }              /* slightly smaller to fit */
+  .top-bar .left-icons {
+    padding-left: 0;                         /* remove big left padding */
+    flex-wrap: wrap;                         /* allow items to wrap by item, not inside */
+    gap: 10px 20px;                          /* row/column gaps */
+    align-items: center;
+  }
+  .top-bar .left-icons span {
+    display: flex;                           /* keep icon + text on one line */
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;                     /* prevent line-breaks inside each item */
+  }
+  .top-bar .left-icons span svg { 
+    flex: 0 0 auto;                          /* stable icon sizing in flex */
+  }
+  .top-bar .thr { 
+    display: none;                           /* hide vertical separators when wrapping */
+  }
+  .top-bar .social-icons { 
+    width: auto;                             /* let it shrink naturally */
+    gap: 14px;
+  }
+  .lang-switch { margin-top: 2px; }
+  .top-bar svg { width: 18px; height: 18px; }/* nudge down icon size */
+}
+
+/* Phone: stack cleanly (optional; refine your previous block) */
+@media (max-width: 768px) {
+  .top-bar .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .top-bar .left-icons {
+    justify-content: center;
+  }
+}
+/* ===== Mobile navbar styles ===== */
+@media (max-width: 991.98px) {
+  .navbar { position: sticky; top: 0; z-index: 1030; }
+
+  /* Place collapsed panel below the bar, full width */
+  .navbar .container { position: relative; }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: #000;                 /* same as header */
+    border-top: 1px solid #222;
+    box-shadow: 0 10px 24px rgba(0,0,0,.35);
+    padding: 8px 12px;
+  }
+
+  /* Reset desktop gaps/sizing */
+  .navbar-nav { 
+    gap: 0; 
+    padding: 6px 0;
+    width: 100%;
+  }
+
+  /* Full-width, left-aligned links with big tap targets */
+  .navbar-nav .nav-link {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 12px 10px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #fff !important;
+  }
+
+  /* Row separators */
+  .navbar-nav .nav-item + .nav-item {
+    border-top: 1px solid #151515;
+  }
+
+  /* Active/hover state */
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus,
+  .navbar-nav .nav-link.active {
+    background: #111;
+  }
+
+  /* Toggler cleanup */
+  .navbar-toggler { border: 0; }
+  .navbar-toggler:focus { box-shadow: none; }
+}
+
+/* Optional: dropdowns look good on mobile too */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    background: #000;
+    border: 1px solid #151515;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 6px 10px;
+  }
+  .dropdown-item {
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+  .dropdown-item:hover { background: #111; }
+}
+   /* header */
+
+
+
 
 @media (max-width: 900px) {
     .section-what-you-get  {
