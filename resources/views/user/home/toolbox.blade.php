@@ -128,8 +128,7 @@
       </div>
     </div>
 
-    <!-- middle dotted divider like figma -->
-    <span class="v-divider" aria-hidden="true"></span>
+
   </div>
  
 </section>

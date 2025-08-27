@@ -18,7 +18,7 @@
 
 <body>
 <div class="wrapper container-fluid plr-0 ">
-  @yield('customcontent');
+  @yield('customcontent')
 </div>
 @include('user.layouts.footer')
 <!-- Js -->
