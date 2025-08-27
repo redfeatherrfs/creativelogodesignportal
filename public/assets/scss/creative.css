@@ -271,7 +271,7 @@ p {
     .rail:hover .track{animation-play-state:paused}
     .cell{flex:0 0 20%; height:100%; display:flex; align-items:center; justify-content:center; background:var(--card); border-right:1px solid var(--divider);}
     .cell:last-child{border-right:none}
-    .logo{max-height:60%; max-width:80%; object-fit:contain; filter:grayscale(100%);}
+    /* .logo{max-height:60%; max-width:80%; object-fit:contain; filter:grayscale(100%);} */
     /* animation (duplicate for seamless loop) */
     @keyframes slide{from{transform:translateX(0)} to{transform:translateX(-100%)}}
     /* responsive: always 5 containers visible */
@@ -299,11 +299,11 @@ p {
 
 /* Responsive */
 @media (max-width: 1199.98px){
-  .toolbox-grid{ grid-template-columns: repeat(3, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 991.98px){
   .toolbox-head, .toolbox-grid{ width: 88%; }
-  .toolbox-grid{ grid-template-columns: repeat(2, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 575.98px){
   .toolbox-head{ flex-direction: column; align-items: flex-start; gap: 12px; }
@@ -313,14 +313,20 @@ p {
 }
 /* Responsive */
 @media (max-width: 1199.98px){
-  .toolbox-grid{ grid-template-columns: repeat(3, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 991.98px){
   .toolbox-head, .toolbox-grid{ width: 88%; }
-  .toolbox-grid{ grid-template-columns: repeat(2, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 575.98px){
   .toolbox-head{ flex-direction: column; align-items: flex-start; gap: 12px; }
+
+  .toolbox-grid {
+ grid-template-columns: repeat(4, 1fr);
+    }
+
+
   .btn-cta{ align-self: flex-end; }
   .toolbox-grid{ grid-template-columns: 1fr; width: 92%; }
   .brand-strip{ padding: 14px 6%; gap: 16px; flex-wrap: wrap; justify-content:center; }
@@ -354,6 +360,8 @@ p {
   .acc-steps{ 
     margin-left: -24px;  /* -16 to -40 tak adjust kar sakte ho */
   }
+
+  
 }
 
  
@@ -364,7 +372,8 @@ p {
 
 /* mobile stack spacing */
 @media (max-width: 991.98px){
-  .acc-steps{ margin-top: 14px; }
+  .acc-steps{ margin-top: 14px; ;}
+   
 }
   /* Section background & spacing */
   /* ---------------- Methodology Layout & Gradient ---------------- */
@@ -954,6 +963,7 @@ p {
 @media (max-width: 991.98px){
   /* hero height thodi kam */
   .proposal-hero{
+    
     padding: 48px 0 56px;
     min-height: 46vh;
     background-position: center top; /* subject visible */
@@ -961,11 +971,27 @@ p {
 
   /* form ko center + width badhao */
   .proposal-form{
-    max-width: 560px;
-    width: 92%;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 
+
+  .acc-steps .acc-title {
+    flex: 1 1 auto;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.accordion-body {
+     font-size: 25px;
+}
+
+.cs-hero-graphic {
+    max-width: 307px;
+    width: 100%;
+    height: auto;
+}
   /* heading thodi compact so it doesn’t push too much height */
   .proposal-hero .hero-title{
     font-size: clamp(30px, 6vw, 44px);
