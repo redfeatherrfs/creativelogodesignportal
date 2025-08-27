@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
 @include('user.layouts.header')
@@ -16,13 +13,14 @@
         </div>
     </div>
 @endif
+
 <div class="zMain-wrap">
     <!-- Sidebar -->
     @include('user.layouts.sidebar')
     <!-- Main Content -->
     <div class="zMainContent overflow-x-hidden">
         <!-- Header -->
-        @include('user.layouts.nav')
+        {{-- @include('user.layouts.nav') --}}
         <!-- Content -->
         @yield('content')
     </div>

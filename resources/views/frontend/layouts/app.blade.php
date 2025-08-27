@@ -17,9 +17,9 @@
 @include('user.layouts.header')
 
 <body>
- 
-@include('user.home.index')
-
+<div class="wrapper container-fluid plr-0 ">
+  @yield('customcontent');
+</div>
 @include('user.layouts.footer')
 <!-- Js -->
 

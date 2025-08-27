@@ -52,15 +52,38 @@ class FrontendController extends Controller
         }else{
             $data['workingProcessData'] = WorkingProcess::where('status',STATUS_ACTIVE)->take(3)->get();
         }
-        return view('frontend.themes.'.getPrefix().'.frontend', $data);
+ 
+       
+        return view('user.home.index', $data);
     }
 
    public function service(){
+   
+        $data['pageTitle'] = __('Services');
+        $data['collection'] = LandingPageSetting::all();
+        $data['faqData'] = Faq::where('status',STATUS_ACTIVE)->get();
+        $data['aboutUs'] = AboutUs::first();
+        $data['chooseUs'] = ChooseUs::where('status',STATUS_ACTIVE)->get();
+        $data['serviceData'] = Service::where('status',STATUS_ACTIVE)->get();
+        $data['memberBenefits'] = MembershipBenefits::where('status',STATUS_ACTIVE)->get();
+        $data['portfolioCategory'] = PortfolioCategory::where('status',STATUS_ACTIVE)->get();
+        $data['packageData'] = Package::where('status',STATUS_ACTIVE)->get();
+        $data['portfolioData'] = Portfolio::where('status', STATUS_ACTIVE)->get()->groupBy('category_id');
+        $data['testimonialData'] = Testimonial::leftJoin('testimonial_categories', 'testimonials.category_id', '=', 'testimonial_categories.id')
+            ->select('testimonial_categories.name as categoryName', 'testimonials.*')
+            ->where('testimonials.status', STATUS_ACTIVE)
+            ->get();
+        $data['blogData'] = Blog::leftjoin('blog_categories','blogs.blog_category_id','=','blog_categories.id')
+            ->select('blogs.*','blog_categories.name as categoryName')
+            ->get();
+        if(getOption('app_theme_style') == THEME_HOME_TWO){
+            $data['workingProcessData'] = WorkingProcess::where('status',STATUS_ACTIVE)->get();
+        }else{
+            $data['workingProcessData'] = WorkingProcess::where('status',STATUS_ACTIVE)->take(3)->get();
+        }
         
-      
-        $data['pageTitle'] = __('Contact Us');
- 
-        return view('frontend.themes.'.getPrefix().'.service',$data);
+        // $data['pageTitle']  = __('Service');
+        return view('user.services.index', $data);
    }
 
     public function contactUs(){
