@@ -271,7 +271,7 @@ p {
     .rail:hover .track{animation-play-state:paused}
     .cell{flex:0 0 20%; height:100%; display:flex; align-items:center; justify-content:center; background:var(--card); border-right:1px solid var(--divider);}
     .cell:last-child{border-right:none}
-    .logo{max-height:60%; max-width:80%; object-fit:contain; filter:grayscale(100%);}
+    /* .logo{max-height:60%; max-width:80%; object-fit:contain; filter:grayscale(100%);} */
     /* animation (duplicate for seamless loop) */
     @keyframes slide{from{transform:translateX(0)} to{transform:translateX(-100%)}}
     /* responsive: always 5 containers visible */
@@ -961,11 +961,21 @@ p {
 
   /* form ko center + width badhao */
   .proposal-form{
-    max-width: 560px;
-    width: 92%;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 
+
+  .acc-steps .acc-title {
+    flex: 1 1 auto;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.accordion-body {
+     font-size: 20px;
+}
   /* heading thodi compact so it doesn’t push too much height */
   .proposal-hero .hero-title{
     font-size: clamp(30px, 6vw, 44px);
