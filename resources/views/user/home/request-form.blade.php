@@ -5,9 +5,8 @@
 
         <p class="eyebrow text-white-50 mb-2">RULE THE WEB!</p>
         <h1 class="hero-title text-white mb-5">
-          REQUEST A WEB DESIGN<br>
-          AND MARKETING<br>
-          PROPOSAL.
+          Kickstart Your Project with <br>
+          a Free Expert Proposal
         </h1>
 
         <form class="proposal-form">
