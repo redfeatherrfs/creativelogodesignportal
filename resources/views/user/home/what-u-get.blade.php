@@ -62,7 +62,7 @@
     </div>
     <div class="service" data-index="4">
       <h3>Marketing <span class="arrow"><svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.10449 1.70947L15.4049 15.0098L28.7052 1.70947" stroke="black" stroke-width="3.17868" stroke-linecap="round"/></svg></span></h3>
-      <p  class="subtitle">From Conceptualization To Execution.</p>
+      <!-- <p  class="subtitle">From Conceptualization To Execution.</p> -->
         <div id="service-panel-4" class="service-body">
          <p>
            Stop guessing about the new trends, start growing with campaigns that will maximise every marketing pound.

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0%;
+    padding: 60px 0%;
     flex-wrap: wrap;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -13,6 +13,8 @@
 }
 .monitor-inner {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .what-you-get-section-left {
@@ -78,7 +80,7 @@
     font-weight: 300;
     line-height: 28px;
     color: var(--text-dark);
-    margin-bottom: 47px;
+    margin-bottom: 20px;
 }
 .service {
     border-bottom: 1px solid var(--text-dark);
@@ -121,6 +123,14 @@
 @media (max-width: 991.98px){
   .monitor-inner { flex-direction: column; }
   .screen { height: 68%; }
+  .meth-title {
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    font-size: 34px;
+    max-width: 85%;
+    margin-bottom: 35px;
+}
 }
 
 /* 992–1199.98px (LG only) */
@@ -140,7 +150,7 @@
 
 /* ≥1400px (XXL and up) — optional */
 @media (min-width: 1400px){
-  .screen { height: 56%; } /* or whatever you want at ≥1400px */
+  .screen { height: 68%; } /* or whatever you want at ≥1400px */
 }
 
 /* how it work */

@@ -392,7 +392,9 @@ p {
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: .01em;
-  font-size: clamp(2rem, 3.6vw + .25rem, 3.6rem);
+  font-size: 43px;
+  max-width: 62%;
+  margin-bottom:0px;
 }
 .meth-title .accent{ color:#e6178f; }
 
@@ -631,7 +633,7 @@ p {
   color:#3a3a3a;
 }
 
-.acc-steps .acc-title{ flex:1 1 auto;  font-size: 20px; font-weight: bolder;}
+.acc-steps .acc-title{ flex:1 1 auto;  font-size: 24px; font-weight: bolder;}
 
 .acc-steps .acc-arrow{
   flex:0 0 auto;

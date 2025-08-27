@@ -123,7 +123,7 @@ Every day you wait is an opportunity they take. Don’t just think, act now.
 }
 /* Play button */
 .btn-about {
-    width: 212.57554626464844px;
+    width: 250.57554626464844px;
     height: 52.572444915771484px;
     line-height: 32px;
     font-size: 19.05px;
