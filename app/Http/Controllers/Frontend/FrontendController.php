@@ -29,6 +29,7 @@ class FrontendController extends Controller
 
     public function index()
     {
+         
         $data['pageTitle'] = __('Welcome');
         $data['collection'] = LandingPageSetting::all();
         $data['faqData'] = Faq::where('status',STATUS_ACTIVE)->get();
@@ -51,13 +52,19 @@ class FrontendController extends Controller
         }else{
             $data['workingProcessData'] = WorkingProcess::where('status',STATUS_ACTIVE)->take(3)->get();
         }
-
         return view('frontend.themes.'.getPrefix().'.frontend', $data);
     }
 
-    public function contactUs(){
+   public function service(){
+        
+      
+        $data['pageTitle'] = __('Contact Us');
+ 
+        return view('frontend.themes.'.getPrefix().'.service',$data);
+   }
 
-        $data['activeContactUs'] = 'active';
+    public function contactUs(){
+         $data['activeContactUs'] = 'active';
         $data['pageTitle'] = __('Contact Us');
 
         return view('frontend.themes.'.getPrefix().'.contact-us',$data);

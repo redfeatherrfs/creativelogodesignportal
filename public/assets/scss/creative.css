@@ -471,6 +471,43 @@ p {
 /* RING */
 .ring{
   position: relative;
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  animation: ring-rotate 8s linear infinite;
+  will-change: transform;
+}
+.ring.paused{ animation-play-state: paused; }
+@keyframes ring-rotate{ to{ transform: rotate(360deg);} }
+
+/* Center img */
+.ring-center{
+  position:absolute; top:50%; left:50%;
+  width:600px; height:600px; border-radius:50%;
+  object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,.12);
+  animation: ring-counter 8s linear infinite;
+}
+.ring.paused .ring-center{ animation-play-state: paused; }
+@keyframes ring-counter{
+  from{ transform: translate(-50%,-50%) rotate(0deg); }
+  to{   transform: translate(-50%,-50%) rotate(-360deg); }
+}
+
+/* Icons around the circle */
+.ring-icon{
+  --count: 8;
+  position:absolute; top:145%; left:145%;
+  transform:
+    rotate(calc(360deg/var(--count)*var(--i)))
+    translate(255px)
+    rotate(calc(-360deg/var(--count)*var(--i)));
+  width:50px; height:50px; border-radius:50%;
+  background:#222; box-shadow:0 4px 16px rgba(0,0,0,.15); z-index:1;
+}
+
+@media (min-width: 767px){
+.ring{
+  position: relative;
   width: 520px; height: 520px;
   border-radius: 50%;
   border: 1px solid #000;
@@ -505,17 +542,38 @@ p {
   background:#222; box-shadow:0 4px 16px rgba(0,0,0,.15); z-index:1;
 }
 
+
+
+}
+
+
+
 /* Responsive ring */
 @media (max-width: 991.98px){
-  .ring{ width:340px; height:340px; }
-  .ring-center{ width:180px; height:180px; }
+
+
+  .cs-hero-graphic {
+    max-width: 459px;
+    width: 200px;
+    height: 320px;
+    margin-left: -120px;
+    margin-bottom: 100px;
+}
+
+
+
+  .ring{ width:600px; height:600px; }
+  .ring-center{ width:380px; height:380px; }
   .ring-icon{
     transform:
       rotate(calc(360deg/var(--count)*var(--i)))
-      translate(150px)
+      translate(300px)
       rotate(calc(-360deg/var(--count)*var(--i)));
   }
   .acc-steps{ margin-left: 0; margin-top: 16px; } /* mobile gap */
+
+
+
 }
 
 /* ---------------- Accordion (custom arrow chip) ---------------- */
@@ -583,8 +641,8 @@ p {
   .ring-center{ width: 320px; height: 320px; }
 }
 @media (max-width: 991.98px){
-  .ring{ width: 340px; height: 340px; }
-  .ring-center{ width: 180px; height: 180px; }
+  /* .ring{ width: 340px; height: 340px; } */
+   
 }
 
 /* default (closed state) = TOP wala arrow (↗) */
@@ -809,34 +867,43 @@ p {
 
 
 /* Section background + overlay */
+/* --- HERO (BG + OVERLAY) --- */
 .proposal-hero{
   position: relative;
   min-height: 86vh;
   padding: 80px 0;
-  z-index: 1; /* form / content ke liye */
+  z-index: 1;                 /* content above pseudo-layers */
 }
 
-/* background image layer */
-.proposal-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("../../assets/images/home_assets/brick-wall-with-parking-meter-it.jpg") 
-              center center / cover no-repeat;
-  z-index: -2; /* sabse neeche */
+.proposal-hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("../../assets/images/home_assets/brick-wall-with-parking-meter-it.jpg")
+             center center / cover no-repeat;
+  /* Figma-style: grayscale + a bit darker to pop white form */
+  filter: grayscale(1) brightness(.65) contrast(1.05);
+  -webkit-filter: grayscale(1) brightness(.65) contrast(1.05);
+  z-index:-2;
+  pointer-events: none;        /* ensure clicks pass through */
 }
 
-/* overlay layer */
-.proposal-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);  /* 👈 overlay (black 45% opacity) */
-  z-index: -1; /* image ke upar, lekin form ke neeche */
+.proposal-hero::after{
+  content:"";
+  position:absolute; inset:0;
+  /* soft vignette/gradient overlay (left a bit darker like figma) */
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.55) 0%,
+      rgba(0,0,0,.45) 25%,
+      rgba(0,0,0,.35) 55%,
+      rgba(0,0,0,.25) 100%);
+  z-index:-1;
+  pointer-events: none;
 }
 
- 
+/* content always above */
 .proposal-hero > .container{ position: relative; z-index: 1; }
+
 
 /* Heading styles */
 .eyebrow{ letter-spacing:.08em; font-weight:700; }
@@ -881,20 +948,86 @@ p {
 .right-padding{ padding-right: 0% !important;}
 
 /* Spacing tweak for large screens so form sits visually centered */
-@media (min-width: 1200px){
-  .proposal-hero{ padding-top: 100px; padding-bottom: 120px; max-height: 300px; }
-  
+/* ========= Responsive tweaks ========= */
 
+/* Tablet and down */
+@media (max-width: 991.98px){
+  /* hero height thodi kam */
+  .proposal-hero{
+    padding: 48px 0 56px;
+    min-height: 46vh;
+    background-position: center top; /* subject visible */
+  }
+
+  /* form ko center + width badhao */
+  .proposal-form{
+    max-width: 560px;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  /* heading thodi compact so it doesn’t push too much height */
+  .proposal-hero .hero-title{
+    font-size: clamp(30px, 6vw, 44px);
+    line-height: 1.08;
+  }
+
+  /* inputs bigger & comfy */
+  .proposal-form .form-control{
+    padding: 14px 14px;
+    font-size: 16px;
+  }
+
+  /* textarea height zyada na ho */
+  .proposal-form textarea.form-control{
+    min-height: 120px;
+  }
+
+  /* submit button bigger */
+  .proposal-form .btn{
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 }
 
-/* Make inputs full width on small screens (Bootstrap already stacks) */
+/* Small phones (iPhone 12 Pro ~390px) */
 @media (max-width: 575.98px){
-  .proposal-hero{ min-height: 92vh; }
-  
+  .proposal-hero{
+    padding: 36px 0 44px;
+    min-height: 46vh !important;             /* 👈 hero height reduced */
+  }
+
+  .proposal-form{
+    width: 94%;
+    max-width: 420px;
+  }
+
+  .proposal-hero .hero-title{
+    font-size: clamp(26px, 7.2vw, 34px);
+    line-height: 1.12;
+    letter-spacing: .2px;
+  }
+
+  .proposal-form .form-control{
+    padding: 13px 14px;
+    font-size: 15px;
+  }
+
+  .proposal-form textarea.form-control{
+    min-height: 110px;
+  }
+
+  .proposal-form .btn{
+    padding: 12px 18px;
+    font-size: 15px;
+  }
 }
-@media (min-width: 767px){
- .left-padding{ padding-left: 1% !important;}
-} 
+
+/* Ultra-small fallback */
+@media (max-width: 360px){
+  .proposal-hero{ min-height: 68vh; }
+}
+
 
 /* Footer Styling */
 
