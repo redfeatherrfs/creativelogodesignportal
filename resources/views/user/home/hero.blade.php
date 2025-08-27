@@ -53,14 +53,13 @@
         </div>
 
         <h1 class="hero-title mt-3">
-          We’re A Web Design<br>
-          Agency From<br>
-          Los Angeles, CA
+          Your All-in-one<br>
+          solution
         </h1>
 
         <p class="hero-sub mt-3 mb-0">
-          Lorem ipsum dolor sit amet consectetur repreh endisicing elit, sed do eiusmod tempor aliqua
-          incididunt ut labore et dolore magna.
+          We’re a Full-Service Design & Development Agency From The UK
+Crafting unique brand identities, immersive UI/UX, cutting-edge apps, and growth-focused marketing strategies for businesses worldwide.
         </p>
       </div>
 
