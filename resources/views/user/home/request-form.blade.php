@@ -1,14 +1,15 @@
 <section class="proposal-hero d-flex align-items-center">
-  <div class="container-fluid plr-0 ">
+  <div class="container-fluid   ">
     <div class="row">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto">
 
         <p class="eyebrow text-white-50 mb-2">RULE THE WEB!</p>
-        <h2 class="hero-title text-white mb-5">
+        <h1 class="hero-title text-white mb-5">
           REQUEST A WEB DESIGN<br>
           AND MARKETING<br>
           PROPOSAL.
-        </h2>
+        </h1>
+
         <form class="proposal-form">
           <div class="row g-3">
             <div class="col-md-6">
