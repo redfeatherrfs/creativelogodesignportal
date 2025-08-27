@@ -6,8 +6,8 @@
     <!-- left -->
      <div class="col-lg-7 col-md-12 col-sm-12">
       <div class="title text-white">
-        <h2>How It Works</h2>
-        <p class="subtitle text-white">Powerful, scalable, innovative design done in three easy steps.</p>
+        <h2>Powerful Brand in Just a Few Clicks</h2>
+        <p class="subtitle text-white">Building your brand can be simple. We make the process quick and focused on results. Just tell us your goals, and we’ll create a brand identity that helps your business get noticed.</p>
         <div class="d-flex ">
             <img src="{{asset('assets/images/home_assets/howitwork-pen-tool.png')}}" class="pen-tool-icon imge-responsive" alt="Pen Tool">
         </div>
@@ -23,9 +23,9 @@
          <img src="{{asset('assets/images/home_assets/key-point-1.svg')}}" class="icon-point-size imge-responsive" alt="Pen Tool 1">
       </div>
       <div class="col-9 col-sm-10 col-md-11 pl-70">
-        <h3 class="text-white fw-bold mb-3">Choose Your Plan</h3>
+        <h3 class="text-white fw-bold mb-3">Discovery & Strategy</h3>
         <p class="subtitle mb-0 text-white">
-          Select a subscription tier that matches your design needs. Scale up or down anytime.
+          We learn about your goals, look at your competitors, and create a plan that fits your brand’s vision.
         </p>
       </div>
       <div class="col-12"><hr class="border-bottom m-0"></div>
@@ -36,9 +36,9 @@
          <img src="{{asset('assets/images/home_assets/key-point-2.svg')}}" class="icon-point-size imge-responsive" alt="Pen Tool 2">
        </div>
       <div class="col-9 col-sm-10 col-md-11 pl-70">
-        <h3 class="text-white fw-bold mb-3">Request Designs</h3>
+        <h3 class="text-white fw-bold mb-3">Concept Development</h3>
         <p class="subtitle mb-0 text-white">
-          Submit unlimited design requests through our simple project dashboard.
+          Our team understands your idea and makes it into something special that connects with your audience.
         </p>
       </div>
       <div class="col-12"><hr class="border-bottom m-0"></div>
@@ -49,9 +49,9 @@
          <img src="{{asset('assets/images/home_assets/key-point-3.svg')}}" class="icon-point-size imge-responsive" alt="Pen Tool 2">
        </div>
       <div class="col-9 col-sm-10 col-md-11 pl-70">
-        <h3 class="text-white fw-bold mb-3">Receive & Revise</h3>
+        <h3 class="text-white fw-bold mb-3">Design & Delivery</h3>
         <p class="subtitle mb-0 text-white">
-          Get designs within 24-48 hours with unlimited revisions until perfect.
+          We handle each detail. Our representative works closely with you to give the best outcome and also gives personal advice.
         </p>
       </div>
       <div class="col-12"><hr class="border-bottom m-0"></div>
