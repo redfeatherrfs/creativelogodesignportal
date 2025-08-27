@@ -9,7 +9,7 @@
   <a href="#contact" class="btn btn-pill btn-cta">Get Started</a>
 </div>
 
-  <div class="container-fluid">
+  <div class="container">
 <div class="row align-items-center g-0">
 
       <!-- LEFT: rotating ring + background -->
@@ -45,7 +45,11 @@
       <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#s1">
         <span class="acc-title">Discovery & Strategy</span>
-        <span class="acc-arrow"></span>
+        <span class="acc-arrow">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2451 0.873372C8.85599 2.26249 6.27177 2.21031 4.82419 0.762735L4.23068 0.169223L3.09114 1.30877L3.68465 1.90228C4.73754 2.95517 6.16844 3.49948 7.58943 3.52904L0.558992 10.5595L1.74602 11.7465L8.77645 4.71607C8.80601 6.13705 9.35032 7.56795 10.4032 8.62084L10.9967 9.21436L12.1363 8.07481L11.5428 7.4813C10.0952 6.03372 10.043 3.44951 11.4321 2.0604L12.0019 1.49063L10.8149 0.303601L10.2451 0.873372Z" fill="white"/>
+          </svg>
+        </span>
       </button>
     </h2>
     <div id="s1" class="accordion-collapse collapse" data-bs-parent="#steps4">
@@ -60,7 +64,11 @@
       <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#s2">
         <span class="acc-title">Concept Development</span>
-        <span class="acc-arrow"></span>
+        <span class="acc-arrow">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2451 0.873372C8.85599 2.26249 6.27177 2.21031 4.82419 0.762735L4.23068 0.169223L3.09114 1.30877L3.68465 1.90228C4.73754 2.95517 6.16844 3.49948 7.58943 3.52904L0.558992 10.5595L1.74602 11.7465L8.77645 4.71607C8.80601 6.13705 9.35032 7.56795 10.4032 8.62084L10.9967 9.21436L12.1363 8.07481L11.5428 7.4813C10.0952 6.03372 10.043 3.44951 11.4321 2.0604L12.0019 1.49063L10.8149 0.303601L10.2451 0.873372Z" fill="white"/>
+          </svg>
+        </span>
       </button>
     </h2>
     <div id="s2" class="accordion-collapse collapse" data-bs-parent="#steps4">
@@ -73,7 +81,11 @@
       <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#s3">
         <span class="acc-title">Design & Iteration</span>
-        <span class="acc-arrow"></span>
+        <span class="acc-arrow">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2451 0.873372C8.85599 2.26249 6.27177 2.21031 4.82419 0.762735L4.23068 0.169223L3.09114 1.30877L3.68465 1.90228C4.73754 2.95517 6.16844 3.49948 7.58943 3.52904L0.558992 10.5595L1.74602 11.7465L8.77645 4.71607C8.80601 6.13705 9.35032 7.56795 10.4032 8.62084L10.9967 9.21436L12.1363 8.07481L11.5428 7.4813C10.0952 6.03372 10.043 3.44951 11.4321 2.0604L12.0019 1.49063L10.8149 0.303601L10.2451 0.873372Z" fill="white"/>
+          </svg>
+        </span>
       </button>
     </h2>
     <div id="s3" class="accordion-collapse collapse" data-bs-parent="#steps4">
@@ -86,7 +98,11 @@
       <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#s4">
         <span class="acc-title">Development & Execution</span>
-        <span class="acc-arrow"></span>
+        <span class="acc-arrow">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2451 0.873372C8.85599 2.26249 6.27177 2.21031 4.82419 0.762735L4.23068 0.169223L3.09114 1.30877L3.68465 1.90228C4.73754 2.95517 6.16844 3.49948 7.58943 3.52904L0.558992 10.5595L1.74602 11.7465L8.77645 4.71607C8.80601 6.13705 9.35032 7.56795 10.4032 8.62084L10.9967 9.21436L12.1363 8.07481L11.5428 7.4813C10.0952 6.03372 10.043 3.44951 11.4321 2.0604L12.0019 1.49063L10.8149 0.303601L10.2451 0.873372Z" fill="white"/>
+          </svg>
+        </span>
       </button>
     </h2>
     <div id="s4" class="accordion-collapse collapse" data-bs-parent="#steps4">

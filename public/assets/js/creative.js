@@ -90,42 +90,43 @@ $(function () {
         }
       });
 
-      //  $(".back-cover").click(function(){
-      //   let slidecover = $(this);
-      //   console.log(slidecover.attr); 
-      //   //  $("").animate({left: '250px'});
-      //  });
+      $(".dot").on("click", function () {
+        const $dot = $(this);
+        const idx  = $(".dot").index(this);            // 0-based index
+        const bgImage      = $dot.data("slide-image");
+        const bgImageCover = $dot.data("slide-cover-image");
 
-      
-      // $(".back-thp").click(function(){
-      //   let slide = $(this);
-      //   console.log(slide.attr); 
-      //   //  $("").animate({left: '250px'});
-      //  });
-
-      $(".dot").on("click", function() {
-        let bgImage = $(this).data('slide-image'); // get background from dot
-
-        if(bgImage){  
-          // 1. Update .back-cover background
+        // 1) Update backgrounds (if provided)
+        if (bgImage) {
           $(".back-cover").css({
             "background-image": "url(" + bgImage + ")",
             "background-size": "cover",
             "background-position": "center"
           });
-
-          // 2. Animate .back-thp (slide in from right)
-          $(".back-thp")
-            .css({
-              "position": "relative"
-              // "right": "100%"   // start hidden on right
-            })
-            .animate({ right: "65%" }, 1000); // animate into place
+        }
+        if (bgImageCover) {
+          $(".back-thp").css({
+            "background-image": "url(" + bgImageCover + ")",
+            "background-size": "cover",
+            "background-position": "center"
+          });
         }
 
-        // 3. Update active dot
+        // 2) Animate .back-thp
+        const $thp = $(".back-thp");
+        $thp.stop(true, true).css({ position: "relative" });
+
+        if (idx === 1) {
+          // For dot index 1: animate from 65% -> 0%
+          $thp.css({ right: "65%" }).animate({ right: "2%" }, 600);
+        } else {
+          // Default (others): animate from 0% -> 65% (adjust as you like)
+          $thp.css({ right: "2%" }).animate({ right: "65%" }, 600);
+        }
+
+        // 3) Active state
         $(".dot").removeClass("active");
-        $(this).addClass("active");
+        $dot.addClass("active");
       });
 
      

@@ -4,7 +4,7 @@
   <!-- Recent Work -->
     <div class="row">
     <!-- left -->
-     <div class="col-md-7 col-sm-12 col-xs-12">
+     <div class="col-lg-7 col-md-12 col-sm-12">
       <div class="title text-white">
         <h2>How It Works</h2>
         <p class="subtitle text-white">Powerful, scalable, innovative design done in three easy steps.</p>
@@ -15,7 +15,7 @@
 
      </div>
      <!-- right -->
-     <div class="col-md-5 col-sm-12 col-xs-12 choose-plans">
+     <div class="col-lg-5 col-md-12 col-sm-12 choose-plans">
 
      <!-- 1 -->
       <div class="row align-items-center g-4 py-1">

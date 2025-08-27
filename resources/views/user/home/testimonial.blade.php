@@ -1,8 +1,8 @@
 <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
 <section class="clients-say py-6">
-  <div class="container-fluid">
-    <div class="row left-padding-testimonial ">
+  <div class="container">
+    <div class="row justify-content-center align-items-center  left-padding-testimonial ">
       <!-- Left graphic -->
       <div class="col-lg-4 text-center text-lg-start">
         <img src="{{asset('assets/images/Group 171.png')}}" alt="Brand Mark" class="cs-hero-graphic">
