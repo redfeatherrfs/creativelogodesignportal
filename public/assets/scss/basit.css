@@ -127,6 +127,10 @@
 @media (min-width: 992px) and (max-width: 1199.98px){
   .monitor-inner { flex-direction: row; }
   .screen { height: 33%; }
+
+  .subtitle {
+    font-size: 26px;
+  }
 }
 
 /* 1200–1399.98px (XL only) */

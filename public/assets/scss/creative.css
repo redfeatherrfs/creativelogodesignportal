@@ -299,11 +299,11 @@ p {
 
 /* Responsive */
 @media (max-width: 1199.98px){
-  .toolbox-grid{ grid-template-columns: repeat(3, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 991.98px){
   .toolbox-head, .toolbox-grid{ width: 88%; }
-  .toolbox-grid{ grid-template-columns: repeat(2, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 575.98px){
   .toolbox-head{ flex-direction: column; align-items: flex-start; gap: 12px; }
@@ -313,14 +313,20 @@ p {
 }
 /* Responsive */
 @media (max-width: 1199.98px){
-  .toolbox-grid{ grid-template-columns: repeat(3, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 991.98px){
   .toolbox-head, .toolbox-grid{ width: 88%; }
-  .toolbox-grid{ grid-template-columns: repeat(2, 1fr); }
+  .toolbox-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 575.98px){
   .toolbox-head{ flex-direction: column; align-items: flex-start; gap: 12px; }
+
+  .toolbox-grid {
+ grid-template-columns: repeat(4, 1fr);
+    }
+
+
   .btn-cta{ align-self: flex-end; }
   .toolbox-grid{ grid-template-columns: 1fr; width: 92%; }
   .brand-strip{ padding: 14px 6%; gap: 16px; flex-wrap: wrap; justify-content:center; }
@@ -354,6 +360,8 @@ p {
   .acc-steps{ 
     margin-left: -24px;  /* -16 to -40 tak adjust kar sakte ho */
   }
+
+  
 }
 
  
@@ -364,7 +372,8 @@ p {
 
 /* mobile stack spacing */
 @media (max-width: 991.98px){
-  .acc-steps{ margin-top: 14px; }
+  .acc-steps{ margin-top: 14px; ;}
+   
 }
   /* Section background & spacing */
   /* ---------------- Methodology Layout & Gradient ---------------- */
@@ -954,6 +963,7 @@ p {
 @media (max-width: 991.98px){
   /* hero height thodi kam */
   .proposal-hero{
+    
     padding: 48px 0 56px;
     min-height: 46vh;
     background-position: center top; /* subject visible */
@@ -974,7 +984,13 @@ p {
 }
 
 .accordion-body {
-     font-size: 20px;
+     font-size: 25px;
+}
+
+.cs-hero-graphic {
+    max-width: 307px;
+    width: 100%;
+    height: auto;
 }
   /* heading thodi compact so it doesn’t push too much height */
   .proposal-hero .hero-title{
