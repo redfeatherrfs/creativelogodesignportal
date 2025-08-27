@@ -41,6 +41,9 @@ Route::get('/local/{ln}', function ($ln) {
 Auth::routes(['verify' => false]);
 
 Route::get('/', [FrontendController::class, 'index'])->name('frontend');
+Route::get('service', [FrontendController::class, 'service'])->name('service');
+
+
 Route::get('contact-us', [FrontendController::class, 'contactUs'])->name('contact-us');
 Route::get('blog-list', [FrontendController::class, 'blogList'])->name('blog-list');
 Route::get('about-us', [FrontendController::class, 'aboutUs'])->name('about-us');
