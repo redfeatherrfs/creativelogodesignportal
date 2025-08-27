@@ -12,18 +12,19 @@
         </div>
         <div class="title">
         <h1>
-          Get Your Digital<br>
-          Presence Elevated<br>
-          With Creative
+          Still Wondering?<br>
+          Your Competitors<br>
+          Aren’t Waiting
         </h1>
          <p class="mb-4">
-          Experience a transformative journey online with creative cutting-edge website templates.
-          Elevate your digital presence effortlessly and captivate your audience with modern design.
+          While you’re weighing things up, your competitors are busy launching fresh websites, sharpening their brands, and snapping up your audience.
+Every day you wait is an opportunity they take. Don’t just think, act now.
+
          </p>
         </div>
 
         <div class="d-flex align-items-center flex-wrap mb-4" style=" gap: 40px;">
-          <a href="#" class="btn btn-about btn-outline-dark rounded-pill px-4 py-2 fw-semibold">Hire Us</a>
+          <a href="#" class="btn btn-about btn-outline-dark rounded-pill px-4 py-2 fw-semibold">Request A Proposal</a>
           <a href="#" class="d-inline-flex btn-how-itworks gap-3 align-items-center text-decoration-none btn-play">
             <svg width="68" height="70" viewBox="0 0 68 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M60.4503 34.7C60.4503 48.5357 49.2342 59.7518 35.3985 59.7518C21.5627 59.7518 10.3467 48.5357 10.3467 34.7C10.3467 20.8643 21.5627 9.64819 35.3985 9.64819C49.2342 9.64819 60.4503 20.8643 60.4503 34.7Z" fill="#CC067F"/>
@@ -31,21 +32,21 @@
             <path d="M42.0763 33.8484C42.7318 34.2269 42.7318 35.1731 42.0763 35.5516L32.7973 40.9088C32.1418 41.2873 31.3223 40.8142 31.3223 40.0572L31.3223 29.3427C31.3223 28.5858 32.1418 28.1127 32.7973 28.4912L42.0763 33.8484Z" fill="white"/>
             </svg>
 
-            <span class="fw-semibold">See How It Works</span>
+            <span class="fw-semibold">Start Your Project Today </span>
           </a>
         </div>
         <!-- Stats -->
         <div class="row g-0 pt-3 border-top border-1 border-light-subtle stats text-center happay-customer">
           <div class="col-4 py-3">
-            <div class="h3 mb-0 fw-bold text-danger">200k+</div>
-            <small class="text-secondary">Happy Customer</small>
+            <div class="h3 mb-0 fw-bold text-danger">1000+</div>
+            <small class="text-secondary">Happy Clients</small>
           </div>
           <div class="col-4 py-3 border-start border-end border-light-subtle">
-            <div class="h3 mb-0 fw-bold text-warning">500+</div>
-            <small class="text-secondary">Complete Project</small>
+            <div class="h3 mb-0 fw-bold text-warning">1,200+</div>
+            <small class="text-secondary">Completed Projects</small>
           </div>
           <div class="col-4 py-3">
-            <div class="h3 mb-0 fw-bold text-primary">50+</div>
+            <div class="h3 mb-0 fw-bold text-primary">60+</div>
             <small class="text-secondary">Team Members</small>
           </div>
         </div>
