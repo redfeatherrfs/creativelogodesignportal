@@ -8,7 +8,7 @@
 
       <!-- Right slider -->
       <div class="col-lg-8 right-padding-testimonial">
-        <h2 class="display-5 fw-bold mb-4 cs-title">WHAT OUR VALUED CLIENTS ARE SAYING ABOUT US</h2>
+        <h2 class="display-5 fw-bold mb-4 cs-title">Our clients' valuable feedback</h2>
 
         <div id="testiCarousel" class="carousel slide" data-bs-ride="false">
           <div class="carousel-inner">
@@ -16,13 +16,9 @@
           <!-- Slide 1 -->
 <div class="carousel-item active">
   <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“I am constantly impressed by the level of talent and professionalism that the team exhibits.”</p>
+    <p class="lead fw-bold mb-3">“I’m well chuffed with the results! The team nailed our brand identity and made the whole process feel effortless.”</p>
     <p class="cs-desc">
-      Lounge Lizard Worldwide delivered a functional website that our team can easily update with confidence. 
-      The communication process is fast and consistent, making collaboration simple even on tight deadlines. 
-      Their designers and developers brought in fresh creative ideas that exceeded expectations. 
-      Every request was handled professionally and turned around in record time. 
-      It’s clear the team values client success as much as technical quality.
+      They handled everything from start to finish. Proper professionals who saved us loads of faff, always on the ball, and bang on with deadlines. Couldn’t have asked for better.
     </p>
     <div class="cs-stars" data-stars="5"></div>
     <div class="cs-author">
@@ -35,13 +31,9 @@
 <!-- Slide 2 -->
 <div class="carousel-item">
   <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Our conversions jumped after the redesign.”</p>
+    <p class="lead fw-bold mb-3">“These folks really know their onions when it comes to design and marketing. Felt like they understood our business straight off the bat.”</p>
     <p class="cs-desc">
-      We partnered with the team to modernize our ecommerce site and the results were immediate. 
-      The redesign simplified navigation, streamlined checkout, and introduced powerful new landing pages. 
-      Within weeks, we saw measurable improvements in lead quality and customer retention. 
-      Their marketing experts guided us with data-driven insights that proved invaluable. 
-      It was one of the smoothest redesign projects we’ve ever experienced.
+      From strategy chats to final delivery, they kept it simple, stress-free, and delivered top-notch work. Cracking bunch who actually listen and graft to get it right every time.
     </p>
     <div class="cs-stars" data-stars="5"></div>
     <div class="cs-author">
@@ -54,13 +46,9 @@
 <!-- Slide 3 -->
 <div class="carousel-item">
   <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Clean code, clear process, on-time delivery.”</p>
+    <p class="lead fw-bold mb-3">“Our new website is brilliant — slick, easy to use, and exactly what we needed. Customers have already noticed the difference.”</p>
     <p class="cs-desc">
-      From the very first sprint, their engineering team demonstrated unmatched attention to detail. 
-      Code was well structured, modular, and delivered ahead of deadlines. 
-      Documentation made it simple for our in-house developers to extend features post-launch. 
-      Every technical challenge was met with pragmatic, scalable solutions. 
-      The project management discipline kept everyone aligned and confident in delivery.
+      Conversions have gone up, engagement’s through the roof, and the site runs like a dream. They sorted the tricky bits without us getting worried. Absolute game-changers.
     </p>
     <div class="cs-stars" data-stars="4"></div>
     <div class="cs-author">
@@ -73,13 +61,9 @@
 <!-- Slide 4 -->
 <div class="carousel-item">
   <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“SEO wins came faster than expected.”</p>
+    <p class="lead fw-bold mb-3">“Can’t fault the service — friendly, sharp, and creative as anything. They made the whole branding job feel like a doddle, fun-loving.”</p>
     <p class="cs-desc">
-      Their SEO team conducted a complete audit and implemented fixes that boosted performance almost instantly. 
-      Technical optimizations improved site speed, accessibility, and crawlability for search engines. 
-      Content mapping helped us target valuable keywords and drive qualified traffic. 
-      The team monitored results closely and adjusted campaigns as new opportunities appeared. 
-      Within months, we secured page-one rankings across several of our competitive terms.
+      The team’s attention to detail was spot on. Every tweak was handled with care, and they worked hard to get us a look that we wanted.
     </p>
     <div class="cs-stars" data-stars="5"></div>
     <div class="cs-author">
@@ -92,13 +76,9 @@
 <!-- Slide 5 -->
 <div class="carousel-item">
   <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Superb branding and visual system.”</p>
+    <p class="lead fw-bold mb-3">“They’re a proper solid team, no messing about. Everything from the first call to the finished product was smooth sailing.”</p>
     <p class="cs-desc">
-      The brand identity we received was nothing short of exceptional. 
-      Their designers understood our vision and translated it into a versatile visual language. 
-      Guidelines were clear, practical, and easy for internal teams to apply across channels. 
-      Every detail from typography to iconography felt considered and purposeful. 
-      Clients and partners alike have commented positively on the new brand presence.
+      They went above and beyond, making sure the designs hit the mark perfectly. Straight-talking, reliable, and genuinely passionate about what they do. We’ll be sticking with them.
     </p>
     <div class="cs-stars" data-stars="5"></div>
     <div class="cs-author">
@@ -108,100 +88,7 @@
   </div>
 </div>
 
-<!-- Slide 6 -->
-<div class="carousel-item">
-  <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Analytics clarity changed our decisions.”</p>
-    <p class="cs-desc">
-      Implementing GA4 with server-side tracking transformed how we view our funnel. 
-      For the first time, we had reliable data across devices and campaigns. 
-      Reports became actionable, letting us cut waste and double down on winning strategies. 
-      Their analytics team simplified complex data into easy-to-read dashboards. 
-      This visibility has changed how leadership makes marketing investments.
-    </p>
-    <div class="cs-stars" data-stars="4"></div>
-    <div class="cs-author">
-      <div class="cs-role fw-bold">HEAD OF ANALYTICS</div>
-      <div class="text-muted small">EdTech</div>
-    </div>
-  </div>
-</div>
 
-<!-- Slide 7 -->
-<div class="carousel-item">
-  <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“From scope to launch, the team felt like partners.”</p>
-    <p class="cs-desc">
-      Collaboration was smooth and transparent throughout the entire engagement. 
-      Weekly demos provided clarity, and feedback was always implemented promptly. 
-      Risks were identified early and addressed before they escalated. 
-      The project roadmap was clear and milestones were consistently met. 
-      It truly felt like we were working with an extension of our own internal team.
-    </p>
-    <div class="cs-stars" data-stars="5"></div>
-    <div class="cs-author">
-      <div class="cs-role fw-bold">COO</div>
-      <div class="text-muted small">B2B Manufacturing</div>
-    </div>
-  </div>
-</div>
-
-<!-- Slide 8 -->
-<div class="carousel-item">
-  <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Paid social scaled without killing CAC.”</p>
-    <p class="cs-desc">
-      Scaling paid campaigns is always tricky, but their approach was structured and effective. 
-      Creative testing helped identify winners quickly and reduce wasted spend. 
-      CRO experiments on landing pages made incremental gains that added up. 
-      We maintained a healthy CAC even while budgets increased significantly. 
-      It proved that disciplined execution can unlock sustainable growth.
-    </p>
-    <div class="cs-stars" data-stars="4"></div>
-    <div class="cs-author">
-      <div class="cs-role fw-bold">PERFORMANCE MARKETER</div>
-      <div class="text-muted small">Beauty Brand</div>
-    </div>
-  </div>
-</div>
-
-<!-- Slide 9 -->
-<div class="carousel-item">
-  <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Best vendor communication I’ve had.”</p>
-    <p class="cs-desc">
-      Quick responses and proactive updates made collaboration seamless. 
-      The documentation provided was thorough and left no room for confusion. 
-      Deliverables were consistently aligned with what was promised in the scope. 
-      Even last-minute requests were handled with grace and professionalism. 
-      I never once felt left in the dark, which is rare with external partners.
-    </p>
-    <div class="cs-stars" data-stars="5"></div>
-    <div class="cs-author">
-      <div class="cs-role fw-bold">IT DIRECTOR</div>
-      <div class="text-muted small">Logistics</div>
-    </div>
-  </div>
-</div>
-
-<!-- Slide 10 -->
-<div class="carousel-item">
-  <div class="cs-slide">
-    <p class="lead fw-bold mb-3">“Accessibility was treated as a first-class feature.”</p>
-    <p class="cs-desc">
-      From day one, accessibility was integrated into the design and build process. 
-      Components were tested with screen readers and optimized for all users. 
-      The team ensured our platform adhered to WCAG guidelines without compromise. 
-      This commitment has not only expanded our reach but also reduced legal risk. 
-      It was refreshing to see inclusivity considered as a core requirement, not an afterthought.
-    </p>
-    <div class="cs-stars" data-stars="5"></div>
-    <div class="cs-author">
-      <div class="cs-role fw-bold">PROGRAM MANAGER</div>
-      <div class="text-muted small">Public Sector</div>
-    </div>
-  </div>
-</div>
 
 
           </div>

@@ -5,9 +5,8 @@
    <div class="col-md-12">
      <div class="title text-white">
       <h2>
-        OUR RESULTS-DRIVEN WEB <br>
-        DESIGN And marketing <br>
-        campaigns
+        Our average success rate <br>
+        when working with clients 
       </h2>
     </div>
 
